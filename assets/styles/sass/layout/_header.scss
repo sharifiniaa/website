@@ -1,0 +1,18 @@
+.header {
+  width: 380px;
+  height: 100vh;
+  position: fixed;
+  background-color: map-get($colors, "black");
+
+  &__wrapper{
+    position: relative;
+    padding-right: 75px;
+  }
+
+
+  .desktop-menu{
+      position: relative;
+      z-index: 2;
+      padding-top: 3rem;
+  }
+}

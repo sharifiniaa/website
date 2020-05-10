@@ -1,0 +1,39 @@
+.menu {
+//   padding: 0;
+  display: inline-block;
+  list-style: none;
+  background-color: transparent;
+
+  &__item {
+    font-size: 30px;
+
+    &--link {
+      color: #fff;
+      padding: 5px 0;
+      position: relative;
+      font-size: 28px;
+      line-height: 50px;
+      font-weight: 700;
+      text-decoration: none;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 15px;
+        background-color: #0582ca;
+        transition: width 0.3s;
+        position: absolute;
+        // right: -5%;
+        bottom: 1px;
+        z-index: -1;
+      }
+
+      &:hover{
+          &:after{
+              width: 110%;
+          }
+      }
+    }
+  }
+}
