@@ -7,7 +7,9 @@ const Layout = ({ children }) => {
     <div className="container-fluid">
       <div className="row">
         <Header />
-        {children}
+        <div className="content-section">
+          <div className="content-section__wrapper">{children}</div>
+        </div>
       </div>
     </div>
   );
