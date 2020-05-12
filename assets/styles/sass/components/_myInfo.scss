@@ -1,0 +1,22 @@
+.my-info-wrapper {
+  margin-top: 5rem;
+}
+
+.my-info-item {
+  margin-bottom: 30px;
+
+  &__title {
+    margin-bottom: 0;
+    margin-top: 12px;
+    font-size: 1rem;
+    line-height: 100%;
+    color: map-get($colors, "blue");
+  }
+
+  &__content {
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: map-get($colors, "pink");
+  }
+}
