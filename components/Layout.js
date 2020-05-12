@@ -5,7 +5,7 @@ import Header from "../containers/Header/Header";
 const Layout = ({ children }) => {
   return (
     <div className="container-fluid">
-      <div class="row">
+      <div className="row">
         <Header />
         {children}
       </div>

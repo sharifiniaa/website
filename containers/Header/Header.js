@@ -1,5 +1,6 @@
 import React from "react";
 import DesktopMenu from "../../components/Header/DesktopMenu";
+import MyInfo from "../../components/Header/MyInfo";
 
 const Header = () => {
   return (
@@ -7,6 +8,7 @@ const Header = () => {
       <div className="header__wrapper">
         <header>
           <DesktopMenu />
+          <MyInfo />
         </header>
       </div>
     </div>
