@@ -1,0 +1,25 @@
+.content-section {
+  margin-right: 380px;
+  width: calc(100% - 380px);
+  background-color: gray;
+  height: 100vh;
+
+  &__wrapper {
+    background-color: map-get($colors, "black");
+  }
+}
+
+.section {
+  position: relative;
+  padding-top: 2rem;
+  background-color: map-get($colors, "black");
+}
+
+.full-width-section {
+  padding: 0;
+}
+
+.section-wrapper {
+  padding-left: 5%;
+  padding-right: 5%;
+}
