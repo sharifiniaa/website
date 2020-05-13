@@ -2,30 +2,45 @@
   flex: 0 0 370px;
   margin-left: 5%;
 
-
-  &__hello{
+  &__hello {
     font-size: 1.75rem;
     padding-top: 1rem;
     margin: 28px auto;
-    color: map-get($colors, "light-blue" );
+    color: map-get($colors, "light-blue");
   }
 
-  &__name{
-      font-size: 5rem;
-      font-weight: 800;
-      line-height: 94px;
-      margin-top: 0;
-      margin-bottom: 1rem;
-      padding: 20px 0;
-      color: map-get($colors, 'white' );
+  &__name {
+    font-size: 5rem;
+    font-weight: 800;
+    line-height: 94px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding: 20px 0;
+    color: map-get($colors, "white");
   }
 
-  &__description{
-      line-height: 30px;
-      font-size: 1rem;
-      margin-top: 1rem;
-      margin-bottom: 3rem;
-      text-align: justify;
-      color: map-get($colors, 'light-blue' );
+  &__description {
+    line-height: 30px;
+    font-size: 15px;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    text-align: justify;
+    color: map-get($colors, "light-blue");
+
+    &--message-link {
+      color: map-get($colors, "white");
+      text-decoration: none;
+      transition: all 250ms ease;
+      &:hover {
+        color: map-get($colors, "blue");
+      }
+    }
+
+    &--icon {
+      font-size: 2rem;
+      display: inline;
+      margin: 3px;
+      vertical-align: middle;
+    }
   }
 }

@@ -1,0 +1,18 @@
+.socials{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    &__link{
+        display: flex;
+        font-size: 3rem;
+        color: map-get($colors, 'light-blue' );
+        transition: all ease 250ms;
+
+        &:hover{
+            color: map-get($colors, 'blue' );
+        }
+    }
+}
