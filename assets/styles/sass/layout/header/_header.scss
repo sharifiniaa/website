@@ -3,6 +3,7 @@
   height: 100vh;
   position: fixed;
   background-color: map-get($colors, "black");
+  z-index: 1;
 
   &__wrapper{
     position: relative;

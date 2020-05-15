@@ -1,0 +1,9 @@
+.last-blog{
+    &__wrapper{
+        .last-blog-content{
+            &__title{
+                @extend .section-title;
+            }
+        }
+    }
+}
