@@ -23,3 +23,13 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+
+.content-1300 {
+  max-width: 1300px;
+}
+
+@media only screen and (max-width: 1599px) {
+  .section {
+    padding-top: 3rem;
+  }
+}

@@ -1,5 +1,6 @@
 $colors: (
   "black": #051923,
+  "gray": #243b4a,
   "blue": #0582ca,
   "dark-blue": #024a80,
   "light-blue": #bfd1df,
@@ -30,4 +31,13 @@ $colors: (
     top: 43px;
     opacity: 0;
   }
+}
+
+.section-title {
+  font-size: 30px;
+  line-height: 100%;
+  margin: 0 0 1rem;
+  padding-top: 0;
+  color: map-get($colors, "blue");
+  padding: 20px 0;
 }
