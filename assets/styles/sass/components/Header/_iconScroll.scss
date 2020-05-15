@@ -1,0 +1,52 @@
+.icon-scroll {
+  position: fixed;
+  width: 380px;
+  right: 0;
+  bottom: 30px;
+  padding-right: 75px;
+  z-index: 1;
+
+  &__holder {
+    position: absolute;
+    left: -18px;
+    width: 38px;
+    height: 60px;
+    margin-right: -20px;
+    bottom: 25px;
+    margin-top: -35px;
+    box-shadow: inset 0 0 0 3px map-get($colors, "blue");
+    border-radius: 25px;
+    transition: right 0.5s;
+
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      background-color: map-get($colors, "black");
+      width: 58px;
+      height: 80px;
+      border-radius: 25px;
+      transform: translate(10px, -10px);
+      transition: all 0.3s;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: -18px;
+      width: 8px;
+      height: 8px;
+      background: #0582ca;
+      margin-left: -4px;
+      top: 8px;
+      border-radius: 4px;
+      -webkit-animation-duration: 1.5s;
+      animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-name: scroll;
+      animation-name: scroll;
+      left: 50%;
+    }
+  }
+}

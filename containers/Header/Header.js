@@ -1,6 +1,7 @@
 import React from "react";
 import DesktopMenu from "../../components/Header/DesktopMenu";
 import MyInfo from "../../components/Header/MyInfo";
+import IconScroll from "../../components/Header/IconScroll";
 
 const Header = () => {
   return (
@@ -9,6 +10,7 @@ const Header = () => {
         <header>
           <DesktopMenu />
           <MyInfo />
+          <IconScroll />
         </header>
       </div>
     </div>
