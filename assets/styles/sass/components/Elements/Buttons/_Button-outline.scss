@@ -1,0 +1,18 @@
+.button-outline {
+    display: inline-block;
+  color: map-get($colors, "pink");
+  border: map-get($colors, "blue") 2px solid;
+  text-align: center;
+  padding: 18px 38px;
+  min-height: 58px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 250ms linear;
+
+  &:hover {
+    color: map-get($colors, "white");
+    background-color: map-get($colors, "blue");
+  }
+}
