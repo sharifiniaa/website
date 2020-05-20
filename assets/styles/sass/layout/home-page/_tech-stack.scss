@@ -1,0 +1,9 @@
+.tech-stack {
+    &__wrapper {
+      .tech-stack-content {
+        &__title {
+          @extend .section-title;
+        }
+      }
+    }
+  }
