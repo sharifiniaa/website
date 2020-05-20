@@ -1,0 +1,94 @@
+.timeline {
+  margin: 0;
+  padding: 0 55px 0 0;
+  &__item {
+    margin: 0 60px 42px 0;
+    position: relative;
+    padding-top: 5px;
+    list-style: none;
+    transition: 250ms;
+
+    &:hover {
+      .timeline__item--circle {
+        background-color: red;
+        &:after {
+          opacity: 1;
+        }
+      }
+      .timeline__item--date {
+        transform: translateX(10px);
+      }
+    }
+
+    &:before {
+      content: "";
+      width: 3px;
+      height: calc(100% - 20px);
+      position: absolute;
+      background-color: map-get($colors, "blue");
+      right: -30px;
+      top: 51px;
+    }
+
+    &--circle {
+      position: absolute;
+      top: 0;
+      right: -30px;
+
+      &:before {
+        content: "";
+        display: block;
+        width: 35px;
+        height: 35px;
+        border-radius: 90%;
+        border: 3px solid map-get($colors, "dark-blue");
+        position: absolute;
+        right: -16px;
+        top: 3px;
+        z-index: 1;
+        transition: 300ms;
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 19px;
+        height: 19px;
+        right: -8px;
+        top: 11px;
+        border-radius: 90%;
+        background-color: map-get($colors, "dark-blue");
+        opacity: 0;
+        transition: opacity 300ms;
+      }
+    }
+
+    &--content {
+      line-height: 160%;
+      text-align: right;
+      margin-right: 50px;
+
+      &__text {
+        color: map-get($colors, "light-blue");
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 400;
+
+        &--time{
+            padding-left: 5px;
+            color: map-get($colors, "pink");
+            font-weight: bold;
+        }
+      }
+    }
+
+    &--date {
+      position: absolute;
+      right: -115px;
+      top: 10px;
+      transition: 300ms;
+      color: map-get($colors, "blue");
+      font-weight: 700;
+    }
+  }
+}
