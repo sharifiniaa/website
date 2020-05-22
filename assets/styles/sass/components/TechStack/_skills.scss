@@ -1,0 +1,23 @@
+.skills {
+  margin: 0.8rem 0;
+  &__image-holder {
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    &--image {
+      max-width: 60px;
+      max-height: 80px;
+    }
+  }
+  &__text-holder {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    &--name {
+      font-size: 22px;
+      line-height: 35px;
+      font-weight: 500;
+      color: map-get($colors, "light-blue");
+    }
+  }
+}
