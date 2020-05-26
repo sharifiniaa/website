@@ -1,0 +1,42 @@
+.contact {
+  &__wrapper {
+    padding-bottom: 150px;
+    .contact-content {
+      &__title {
+        @extend .section-title;
+      }
+
+      &__holder {
+        //   margin-left: 5%;
+        &--info {
+          &__text {
+            color: map-get($colors, "light-blue");
+            font-size: 22px;
+            line-height: 35px;
+            margin: 0;
+            &--icon {
+              font-size: 2rem;
+              display: inline;
+              margin: 3px;
+              vertical-align: middle;
+            }
+          }
+
+          &__personal {
+            margin: 15px 0;
+            &--line {
+              font-size: 15px;
+              font-weight: 400;
+              color: map-get($colors, "light-blue");
+              line-height: 30px;
+
+              &__title{
+                  font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
