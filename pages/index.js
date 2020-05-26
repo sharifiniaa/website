@@ -5,6 +5,8 @@ import LastBlog from "../containers/HomePage/LastBlog";
 import AboutMe from "../containers/HomePage/About";
 import Resume from "../containers/HomePage/Resume/";
 import TechStack from "../containers/HomePage/TechStack";
+import Contact from '../containers/HomePage/Contact';
+
 
 export default function index() {
   return (
@@ -14,6 +16,7 @@ export default function index() {
       <AboutMe />
       <Resume />
       <TechStack />
+      <Contact/>
     </Layout>
   );
 }

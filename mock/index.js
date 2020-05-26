@@ -73,3 +73,21 @@ export const skills = [
     image: "nodejs.png",
   },
 ];
+
+export const contactData = {
+  section_info: 'برای من پیام ارسال کنین برای ارزیابی و بررسی پروژه یا هر سوالی در خصوص این موضوع یا سوال درباره برنامه نویسی رو میتونین',
+  personal_info: [
+    {
+      title: 'آدرس',
+      text: 'ایران، تهران'
+    },
+    {
+      title: 'ایمیل',
+      text: 'hosein.sharifinia@gmail.com'
+    },
+    {
+      title: 'وبسایت',
+      text: 'www.hoseinsharfinia.ir'
+    }
+  ]
+}
