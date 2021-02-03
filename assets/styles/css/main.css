@@ -1,20 +1,18 @@
 @font-face {
   font-family: vazir;
   font-style: normal;
-  font-weight: normal;
-  src: url("/assets/fonts/fa/Vazir-Black-FD.eot");
-  src: url("/assets/fonts/fa/Vazir-Black-FD.eot?#iefix") format("embedded-opentype"),
-   url("/assets/fonts/fa/Vazir-Black-FD.woff") format("woff"),
-   url("/assets/fonts/fa/Vazir-Black-FD.woff2") format("woff2"),
-   url("/assets/fonts/fa/Vazir-Black-FD.ttf") format("truetype"),
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/fa/Vazir-Black-FD.eot"),
+    url("/fonts/fa/Vazir-Black-FD.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/fa/Vazir-Black-FD.woff") format("woff"),
+    url("/fonts/fa/Vazir-Black-FD.woff2") format("woff2"),
+    url("/fonts/fa/Vazir-Black-FD.ttf") format("truetype");
 }
 
-
-
-
 body {
-  overflow-x: hidden ;
-  font-family: vazir;
+  overflow-x: hidden;
+  font-family: vazir !important;
   direction: rtl;
   background-color: #051923;
   color: #bfd1df;
