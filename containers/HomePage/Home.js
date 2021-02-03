@@ -10,6 +10,17 @@ const Home = (props) => {
         <HomeRight />
         <HomeLeft />
       </div>
+
+      <style scoped jsx>
+        {`
+          #home {
+            opacity: 0.2;
+            &:hover {
+              opacity: 0.9;
+            }
+          }
+        `}
+      </style>
     </div>
   );
 };
