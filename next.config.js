@@ -1,14 +1,19 @@
 const withSass = require("@zeit/next-sass");
 const withCSS = require("@zeit/next-css");
-const withFonts = require("next-fonts");
 
-module.exports = withFonts(
-  withCSS(
-    withSass({
-      enableSvg: true,
-      webpack(config, options) {
-        return config;
-      },
-    })
-  )
-);
+module.exports = withCSS(
+  withSass({
+    webpack: (config, { buildId, dev, isServer, defaultLoaders }) => {
+      config.module.rules.push({
+        enforce: "pre",
+        test: /\.scss$/,
+        loader: "sass-resources-loader",
+        options: {
+          resources: "./assets/styles/sass/abstracts/_variables.scss"
+        }
+      })
+  
+      return config
+    }
+  })
+)

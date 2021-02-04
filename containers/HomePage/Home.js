@@ -5,18 +5,26 @@ import HomeLeft from "../../components/HomePage/HomeLeft";
 
 const Home = (props) => {
   return (
-    <div id="home" className="home-section full-with-section">
+    <div id="home" className="home home-section full-with-section">
       <div className="home-section__holder">
         <HomeRight />
-        <HomeLeft />
+        <div className="home__left" />
       </div>
 
       <style scoped jsx>
         {`
-          #home {
-            opacity: 0.2;
-            &:hover {
-              opacity: 0.9;
+          .home {
+            &__left {
+              flex: 1 0 0;
+              height: 100%;
+              background-image: url("/me.png");
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position: 50%;
+            }
+
+            &__right {
+              // TODO: right section styles
             }
           }
         `}
