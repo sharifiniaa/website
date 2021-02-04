@@ -4,6 +4,7 @@ import { faSmile } from "@fortawesome/free-regular-svg-icons";
 import InfoText from "../../../components/Contact/infoText";
 
 import { contactData } from "../../../mock";
+import ContactForm from "../../../components/Contact/ContactForm";
 
 const index = () => {
   return (
@@ -11,6 +12,7 @@ const index = () => {
       <div className="contact__wrapper section-wrapper">
         <div className="contact-content content-1300">
           <h2 className="contact-content__title">تماس با من</h2>
+
           <div className="row contact-content__holder">
             <div className="contact-content__holder--info col-5">
               <p className="contact-content__holder--info__text">
@@ -26,7 +28,9 @@ const index = () => {
                 ))}
               </div>
             </div>
-            <div className="contact-content__holder--form col-7">FORM</div>
+            <div className="contact-content__holder--form col-7">
+              <ContactForm />
+            </div>
           </div>
         </div>
       </div>
