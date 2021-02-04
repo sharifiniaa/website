@@ -2,12 +2,13 @@
   flex: 0 0 370px;
   margin-left: 5%;
 
-  &__hello {
-    font-size: 1.75rem;
+/*   &__hello {
+    // font-size: 1.75rem;
+    font-size: map-get($font-sizes , 7 );
     padding-top: 1rem;
     margin: 28px auto;
     color: map-get($colors, "light-blue");
-  }
+  } */
 
   &__name {
     font-size: 5rem;

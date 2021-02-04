@@ -8,6 +8,15 @@ $colors: (
   "white": #fff,
 );
 
+@each $colorPrefix, $color in $colors {
+  .color-#{$colorPrefix} {
+    color: $color;
+  }
+  .bg-color-#{$colorPrefix}{
+    background-color: $color;
+  }
+}
+
 @keyframes scroll {
   0% {
     top: 8px;
@@ -40,4 +49,46 @@ $colors: (
   padding-top: 0;
   color: map-get($colors, "blue");
   padding: 20px 0;
+}
+
+
+$font-sizes: (
+        0: 0.5rem,
+        1: 0.625rem, // 10px
+        2: 0.75rem, // 12px
+        3: 0.813rem, // 13px
+        4: 0.875rem, // 14px
+        5: 1rem,
+        6: 1.25rem, // 20px
+        7: 1.5rem, // 24px
+        8: 1.75rem,
+        9: 1.875rem, // 30px
+        10: 2rem, // 32px
+        11: 3rem
+);
+
+@each $sizePrefix, $size in $font-sizes {
+  .text-#{$sizePrefix}{
+    font-size: $size;
+  }
+}
+
+
+$font-weights: (
+        '400': 400,
+        '500': 500,
+        '600': 600,
+        '700': 700,
+        '800': 800,
+        'bold': bold
+);
+
+@each $weight, $font-weight in $font-weights {
+  .font-weight-#{$weight} {
+    font-weight: $font-weight;
+  }
+}
+
+.lh-lg {
+  line-height: 2em;
 }
