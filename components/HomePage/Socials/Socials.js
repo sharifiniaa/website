@@ -10,13 +10,16 @@ import {
 
 const Socials = () => {
   return (
-    <div className="socials">
-      <a className="socials__link" href="mailto:hosein.sharifinia@gmail.com">
+    <div className="d-flex justify-content-between align-items-center">
+      <a
+        className="d-flex text-11 color-light-blue link-icon"
+        href="mailto:hosein.sharifinia@gmail.com"
+      >
         <FontAwesomeIcon className="socials__link--icon" icon={faEnvelope} />
       </a>
       <a
         href="https://www.instagram.com/hossein.sharifinia"
-        className="socials__link"
+        className="d-flex text-11 color-light-blue link-icon"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -24,7 +27,7 @@ const Socials = () => {
       </a>
       <a
         href="https://www.linkedin.com/in/hossein-sharifinia"
-        className="socials__link"
+        className="d-flex text-11 color-light-blue link-icon"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -32,7 +35,7 @@ const Socials = () => {
       </a>
       <a
         href="https://t.me/sharifiniahosein"
-        className="socials__link"
+        className="d-flex text-11 color-light-blue link-icon"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -40,12 +43,22 @@ const Socials = () => {
       </a>
       <a
         href="https://web.whatsapp.com/send?phone=989115538225"
-        className="socials__link"
+        className="d-flex text-11 color-light-blue link-icon"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon className="socials__link--icon" icon={faWhatsapp} />
       </a>
+      <style scoped jsx>
+        {`
+          .link-icon {
+            transition: all ease 250ms;
+          }
+          .link-icon:hover {
+            color: #0582ca;
+          }
+        `}
+      </style>
     </div>
   );
 };
