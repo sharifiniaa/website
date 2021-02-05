@@ -19,8 +19,13 @@ const HomeRight = () => {
         بفرستی!
       </p>
       <Socials />
-      <style jsx>
+      <style scoped jsx>
         {`
+          .home-right {
+            flex: 0 0 370px;
+            margin-left: 5%;
+          }
+
           .message-link {
             text-decoration: none;
             transition: all 250ms ease;

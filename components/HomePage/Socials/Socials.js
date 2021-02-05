@@ -49,14 +49,14 @@ const Socials = () => {
       >
         <FontAwesomeIcon className="socials__link--icon" icon={faWhatsapp} />
       </a>
-      <style>
+      <style scoped jsx>
         {`
-        .link-icon{
-          transition: all ease 250ms;          
-        }
-        .link-icon:hover{
-          color:#0582ca;
-        }
+          .link-icon {
+            transition: all ease 250ms;
+          }
+          .link-icon:hover {
+            color: #0582ca;
+          }
         `}
       </style>
     </div>
