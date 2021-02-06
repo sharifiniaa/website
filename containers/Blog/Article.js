@@ -42,7 +42,7 @@ const Article = ({ data }) => {
             text-decoration: none;
           }
           .image-holder {
-            max-height: 340px;
+            max-height: 500px;
             overflow: hidden;
           }
           .image {

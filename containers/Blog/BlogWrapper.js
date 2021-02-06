@@ -5,7 +5,7 @@ import { blog } from "../../mock";
 
 const BlogWrapper = () => {
   return (
-    <div className="blog-wrapper">
+    <div className="blog-wrapper d-flex flex-wrap">
       {blog.map((item, i) => (
         <Article data={item} key={i} />
       ))}
