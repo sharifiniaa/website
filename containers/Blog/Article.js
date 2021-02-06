@@ -48,11 +48,12 @@ const Article = ({ data }) => {
           .image {
             width: 100%;
             transition: transform 0.5s ease;
+            &:hover {
+              transform: scale(1.05);
+              width: 100%;
+            }
           }
-          .image:hover {
-            transform: scale(1.05);
-            width: 100%;
-          }
+
           .article-top-title {
             line-height: 2rem;
           }
@@ -62,9 +63,9 @@ const Article = ({ data }) => {
           .article-bottom-link-title {
             transition: color 250ms linear;
             text-decoration: none;
-          }
-          .article-bottom-link-title:hover {
-            color: #0582ca;
+            &:hover {
+              color: #0582ca;
+            }
           }
         `}
       </style>

@@ -18,11 +18,16 @@ const ButtonOutline = ({ link, title }) => {
             text-decoration: none;
             transition: all 250ms linear;
             border-radius: 50px;
-          }
-          .button-outline:hover {
-            color: white;
-            background-color: #0582ca;
-          }
+
+            &:hover {
+              color: white;
+              background-color: #0582ca;
+            }}
+
+          
+          
+
+          
         `}
       </style>
     </div>
