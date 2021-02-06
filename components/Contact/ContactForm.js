@@ -1,4 +1,5 @@
 import React from "react";
+import ButtonOutline from "../Buttons/ButtounOutline";
 
 const ContactForm = () => {
   return (
@@ -15,6 +16,7 @@ const ContactForm = () => {
       <div className="contact-from__input-holder">
         <textarea row="6" name="message" placeholder="پیام شما" />
       </div>
+      <ButtonOutline title={"ارسال پیام"} />
     </form>
   );
 };
