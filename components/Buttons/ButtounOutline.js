@@ -22,12 +22,8 @@ const ButtonOutline = ({ link, title }) => {
             &:hover {
               color: white;
               background-color: #0582ca;
-            }}
-
-          
-          
-
-          
+            }
+          }
         `}
       </style>
     </div>
