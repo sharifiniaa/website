@@ -3,7 +3,7 @@ import React from "react";
 const HomeLeft = () => {
   return (
     <div className="home-left d-flex h-100 ">
-      <style jsx>
+      <style scoped jsx>
         {`
           .home-left {
             background-image: url("/me.png");
