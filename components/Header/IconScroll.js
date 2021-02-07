@@ -2,8 +2,8 @@ import React from "react";
 
 const IconScroll = () => {
   return (
-    <div>
-      <div className="icon-scroll"></div>
+
+    <div className="icon-scroll">
       <style scoped jsx>
         {`
           .icon-scroll {
