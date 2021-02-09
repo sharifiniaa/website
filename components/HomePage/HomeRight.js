@@ -6,7 +6,7 @@ const HomeRight = () => {
   return (
     <div className="home-right">
       <p className="text-8 color-light-blue pt-3 my-3 ">سلام</p>
-      <h1 className="name text-12 font-weight-800 mt-0 mb-5 pt-4 pb-0 color-white">
+      <h1 className=" text-12 font-weight-800 mt-0 mb-5 pt-4 pb-0 color-white">
         حسینم
       </h1>
       <p className="about-me text-6 mb-3 mb-5 text-justify color-light-blue">
@@ -21,11 +21,6 @@ const HomeRight = () => {
       <Socials />
       <style scoped jsx>
         {`
-          .home-right {
-            flex: 0 0 370px;
-            margin-left: 5%;
-          }
-
           .message-link {
             text-decoration: none;
             transition: all 250ms ease;
