@@ -2,7 +2,7 @@ import React from "react";
 
 const TechItem = ({ item }) => {
   return (
-    <div className="row skillls skills ">
+    <div className="row skills ">
       <div className="col-9 skills skills-text-holder">
         <p className="skills skills-text-holder  skills-text-holder-name">
           {item.name}
@@ -19,7 +19,6 @@ const TechItem = ({ item }) => {
         {`
           .skills {
             margin: 0.8rem 0;
-
             .skills-image-holder {
               text-align: center;
               padding-top: 0.5em;

@@ -13,12 +13,10 @@ const ButtonOutline = ({ link, title }) => {
         {`
           .button-outline {
             border: #0582ca 2px solid;
-            min-height: 58px;
             cursor: pointer;
             text-decoration: none;
             transition: all 250ms linear;
             border-radius: 50px;
-
             &:hover {
               color: white;
               background-color: #0582ca;
