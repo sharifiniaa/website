@@ -7,10 +7,10 @@ import TechItem from "./TechItem";
 
 const index = () => {
   return (
-    <div id="tech-stack" className="tech-stack section">
-      <div className="tech-stack-wrapper section-wrapper">
-        <div className="tech-stack-content content-1300">
-          <h2 className="tech-stack-content-title pt-4 pb-0 text-10">
+    <div id="tech-stack" className="tech-stack bg-color-black pt-4">
+      <div className="tech-stack-wrapper px-5">
+        <div className="tech-stack-content ">
+          <h2 className="tech-stack-content-title pt-4 pb-3 text-10">
             تخصص ها
           </h2>
           <p className="tech-stack-content-text text-7 m-0 color-light-blue">
@@ -32,8 +32,10 @@ const index = () => {
             margin-right: -100px;
           }
           .tech-stack {
+            position: relative;
             .tech-stack-wrapper {
               .tech-stack-content {
+                max-width: 1300px;
                 .tech-stack-content-skills {
                 }
                 .tech-stack-content-title {
