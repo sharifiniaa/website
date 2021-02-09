@@ -46,8 +46,6 @@ const index = () => {
                 &__info {
                   line-height: 35px;
                 }
-                &__cta-holder {
-                }
               }
             }
           }
