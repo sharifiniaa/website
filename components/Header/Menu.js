@@ -1,43 +1,43 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const Menu = () => {
   return (
     <div>
-      <ul className="menu d-inline-block">
-        <li className="menu menu-item">
-          <Link href="/">
-            <a className="menu menu-item menu-item-link">خانه</a>
+      <ul className='menu d-inline-block'>
+        <li className='menu menu-item'>
+          <Link href='#home'>
+            <a className='menu menu-item menu-item-link'>خانه</a>
           </Link>
         </li>
-        <li className="menu menu-item">
-          <Link href="/">
-            <a className="menu menu-item menu-item-link">بلاگ</a>
+        <li className='menu menu-item'>
+          <Link href='#blog'>
+            <a className='menu menu-item menu-item-link'>بلاگ</a>
           </Link>
         </li>
-        <li className="menu menu-item">
-          <Link href="/">
-            <a className="menu menu-item menu-item-link">درباره من</a>
+        <li className='menu menu-item'>
+          <Link href='#about-me'>
+            <a className='menu menu-item menu-item-link'>درباره من</a>
           </Link>
         </li>
-        <li className="menu menu-item">
-          <Link href="/">
-            <a className="menu menu-item menu-item-link">قابلیت ها</a>
+        <li className='menu menu-item'>
+          <Link href='#tech-stack'>
+            <a className='menu menu-item menu-item-link'>قابلیت ها</a>
           </Link>
         </li>
-        <li className="menu menu-item">
-          <Link href="/">
-            <a className="menu menu-item menu-item-link">نمونه کار</a>
+        <li className='menu menu-item'>
+          <Link href='#resume'>
+            <a className='menu menu-item menu-item-link'>نمونه کار</a>
           </Link>
         </li>
-        <li className="menu menu-item">
-          <Link href="/">
-            <a className="menu menu-item menu-item-link">تماس</a>
+        <li className='menu menu-item'>
+          <Link href='#contact'>
+            <a className='menu menu-item menu-item-link'>تماس</a>
           </Link>
         </li>
-        <li className="menu menu-item">
-          <Link href="/">
-            <a className="menu menu-item menu-item-link">سوالات متداول</a>
+        <li className='menu menu-item'>
+          <Link href='#faq'>
+            <a className='menu menu-item menu-item-link'>سوالات متداول</a>
           </Link>
         </li>
       </ul>
@@ -60,7 +60,7 @@ const Menu = () => {
                 text-decoration: none;
 
                 :after {
-                  content: "";
+                  content: '';
                   display: block;
                   width: 0;
                   height: 15px;
@@ -73,6 +73,11 @@ const Menu = () => {
                 }
 
                 :hover {
+                  &:after {
+                    width: 110%;
+                  }
+                }
+                :focus {
                   &:after {
                     width: 110%;
                   }

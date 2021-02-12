@@ -3,11 +3,11 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/fonts/fa/Vazir-Black-FD.eot"),
-    url("/fonts/fa/Vazir-Black-FD.eot?#iefix") format("embedded-opentype"),
-    url("/fonts/fa/Vazir-Black-FD.woff") format("woff"),
-    url("/fonts/fa/Vazir-Black-FD.woff2") format("woff2"),
-    url("/fonts/fa/Vazir-Black-FD.ttf") format("truetype");
+  src: url('/fonts/fa/Vazir-Black-FD.eot'),
+    url('/fonts/fa/Vazir-Black-FD.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/fa/Vazir-Black-FD.woff') format('woff'),
+    url('/fonts/fa/Vazir-Black-FD.woff2') format('woff2'),
+    url('/fonts/fa/Vazir-Black-FD.ttf') format('truetype');
 }
 
 body {
@@ -16,4 +16,11 @@ body {
   direction: rtl;
   background-color: #051923;
   color: #bfd1df;
+}
+a:focus {
+  outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
