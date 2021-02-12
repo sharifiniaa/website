@@ -1,9 +1,8 @@
-import React from "react";
+import React from 'react';
 
 const IconScroll = () => {
   return (
-
-    <div className="icon-scroll">
+    <div className='icon-scroll'>
       <style scoped jsx>
         {`
           .icon-scroll {
@@ -18,7 +17,7 @@ const IconScroll = () => {
             border-radius: 25px;
             transition: right 0.5s;
             &:after {
-              content: "";
+              content: '';
               position: absolute;
               z-index: -1;
               background-color: #051923;
@@ -29,7 +28,7 @@ const IconScroll = () => {
               transition: all 0.3s;
             }
             &:before {
-              content: "";
+              content: '';
               position: absolute;
               width: 8px;
               height: 8px;

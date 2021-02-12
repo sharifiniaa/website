@@ -1,30 +1,30 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 
 const Article = ({ data }) => {
   return (
-    <div className="article-holder  bg-color-gray mb-4">
-      <Link href="/">
-        <a className="article-top color-white ">
-          <div className="article-top image-holder d-block ">
+    <div className='article-holder  bg-color-gray mb-4'>
+      <Link href='/'>
+        <a className='article-top color-white '>
+          <div className='article-top image-holder d-block '>
             <img
-              alt=""
+              alt=''
               src={data.image}
-              className="article-top image-holder image "
+              className='article-top image-holder image '
             />
           </div>
-          <h4 className="article-top article-top-title text-7 color-blue font-weight-700 m-0 pt-3 pb-0 ">
+          <h4 className='article-top article-top-title text-7 color-blue font-weight-700 m-0 pt-3 pb-0 '>
             {data.title}
           </h4>
         </a>
       </Link>
-      <div className="article-bottom ">
-        <p className="article-bottom  decription text-5 color-light-blue mb-3">
+      <div className='article-bottom '>
+        <p className='article-bottom  decription text-5 color-light-blue mb-3'>
           {data.description.slice(0, 195)}...
         </p>
-        <div className="article-bottom article-bottom-link w-100 text-align-center">
-          <Link href="/">
-            <a className="article-bottom  article-bottom-link-title color-white pt-3 pb-3 text-align-center">
+        <div className='article-bottom article-bottom-link w-100 text-align-center'>
+          <Link href='/'>
+            <a className='article-bottom  article-bottom-link-title color-white pt-3 pb-3 text-align-center'>
               ادامه مطلب
             </a>
           </Link>
@@ -65,6 +65,11 @@ const Article = ({ data }) => {
             text-decoration: none;
             &:hover {
               color: #0582ca;
+            }
+          }
+          @media (max-width: 768px) {
+            .article-holder {
+              width: 100%;
             }
           }
         `}

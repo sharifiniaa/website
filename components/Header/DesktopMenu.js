@@ -3,7 +3,7 @@ import Menu from "./Menu";
 
 const DesktopMenu = () => {
   return (
-    <div className="desktop-menu hide-on-mobile">
+    <div className="desktop-menu">
       <Menu />
       <style scoped jsx>
         {`
@@ -12,6 +12,7 @@ const DesktopMenu = () => {
             z-index: 2;
             padding-top: 3rem;
           }
+          
         `}
       </style>
     </div>
