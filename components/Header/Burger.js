@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
-import NavBar from './NavBar';
+import React, { useState } from "react";
+import NavBar from "./NavBar";
 
-function Burger(props) {
+function Burger() {
   const [open, setOpen] = useState(false);
 
   return (
     <>
       <div>
-        {' '}
+        {" "}
         <NavBar open={open} setOpen={setOpen} />
       </div>
-      <div className='main-con'>
-        <div className='main' open={open} onClick={() => setOpen(!open)}>
-          <div className={`child-div ${open ? 'opened' : ''}`} />
-          <div className={`child-div ${open ? 'opened' : ''}`} />
-          <div className={`child-div ${open ? 'opened' : ''}`} />
+      <div className="main-con">
+        <div className="main" open={open} onClick={() => setOpen(!open)}>
+          <div className={`child-div ${open ? "opened" : ""}`} />
+          <div className={`child-div ${open ? "opened" : ""}`} />
+          <div className={`child-div ${open ? "opened" : ""}`} />
         </div>
         <style scoped jsx>
           {`
@@ -67,7 +67,7 @@ function Burger(props) {
                 width: 100%;
                 height: 4rem;
                 transition: all 0.3s linear;
-                background-color: ${open ? 'transparent' : '#051923'};
+                background-color: ${open ? "transparent" : "#051923"};
                 position: fixed;
                 top: 0;
                 right: 0;
