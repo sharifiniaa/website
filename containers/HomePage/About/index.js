@@ -11,7 +11,7 @@ const index = () => {
     <div id="about-me" className="about pt-4 color-black">
       <div className="about__wrapper px-5">
         <div className="about-content">
-          <h2 className="about-content__title text-9 color-blue pt-4 pb-0 m-0 mb-5">
+          <h2 className="about-content__title text-9 color-blue pt-5 pb-0 m-0 mb-5">
             درباره من
           </h2>
           <p className="about-content__text color-light-blue text-6 font-weight-500 mt-3">

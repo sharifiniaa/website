@@ -9,7 +9,7 @@ const HomeRight = () => {
       <h1 className=' text-12 font-weight-800 mt-0 mb-5 pt-4 pb-0 color-white'>
         حسینم
       </h1>
-      <p className='about-me text-6  mb-5 text-justify color-light-blue'>
+      <p className='about-me text-6  mb-5 ml-3  text-justify color-light-blue'>
         من توسعه دهنده وب هستم و کارم یکی از قسمت‌های جذاب زندگیم محسوب می‌شه.
         عاشق یادگیری چیزای جدید تو حوزه کاری و تخصصی خودم هستم. اگه سوالی داری
         میتونی برام{' '}

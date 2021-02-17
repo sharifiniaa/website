@@ -3,12 +3,12 @@ import IconScroll from './IconScroll';
 import Menu from './Menu';
 import MyInfo from './MyInfo';
 
-function NavBar({ open }) {
+function NavBar({ open, setOpen }) {
   return (
-    <div className={`header ${open ? '' : 'opened'}`}>
+    <div className={`header ${open ? '' : 'closed'}`}>
       <div className='header header-wrapper'>
         <div className='navbar'>
-          <Menu />
+          <Menu open={open} setOpen={setOpen} />
           <MyInfo />
           <IconScroll />
         </div>
@@ -25,7 +25,7 @@ function NavBar({ open }) {
             width: 380px;
             position: fixed;
             background-color: #051923;
-            z-index: 1;
+            z-index: 2;
             transform: translateX(0);
             transition: all 0.3s linear;
 
@@ -36,7 +36,10 @@ function NavBar({ open }) {
           }
 
           @media (max-width: 1200px) {
-            .header.opened {
+            .header {
+              box-shadow: 10px 1px 30px #024a80;
+            }
+            .header.closed {
               transform: translateX(100%);
               transition: all 0.3s linear;
             }

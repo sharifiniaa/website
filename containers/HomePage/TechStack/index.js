@@ -7,7 +7,7 @@ import TechItem from "./TechItem";
 
 const index = () => {
   return (
-    <div id="tech-stack" className="tech-stack bg-color-black pt-4">
+    <div id="tech-stack" className="tech-stack bg-color-black pt-5">
       <div className="tech-stack-wrapper px-5">
         <div className="tech-stack-content ">
           <h2 className="tech-stack-content-title pt-4 pb-3 text-10">

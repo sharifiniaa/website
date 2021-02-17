@@ -8,7 +8,7 @@ function Burger(props) {
     <>
       <div>
         {' '}
-        <NavBar open={open} />
+        <NavBar open={open} setOpen={setOpen} />
       </div>
       <div className='main-con'>
         <div className='main' open={open} onClick={() => setOpen(!open)}>
@@ -25,6 +25,7 @@ function Burger(props) {
               top: 15px;
               right: 20px;
               display: flex;
+              cursor: pointer;
 
               justify-content: space-around;
               flex-flow: column nowrap;
@@ -65,7 +66,7 @@ function Burger(props) {
               .main-con {
                 width: 100%;
                 height: 4rem;
-                transition: all 0.3s;
+                transition: all 0.3s linear;
                 background-color: ${open ? 'transparent' : '#051923'};
                 position: fixed;
                 top: 0;

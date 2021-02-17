@@ -1,43 +1,85 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Menu = () => {
+const Menu = ({ open, setOpen }) => {
   return (
     <div>
       <ul className='menu d-inline-block'>
         <li className='menu menu-item'>
           <Link href='#home'>
-            <a className='menu menu-item menu-item-link'>خانه</a>
+            <a
+              className='menu menu-item menu-item-link'
+              open={open}
+              onClick={() => setOpen(!open)}
+            >
+              خانه
+            </a>
           </Link>
         </li>
         <li className='menu menu-item'>
           <Link href='#blog'>
-            <a className='menu menu-item menu-item-link'>بلاگ</a>
+            <a
+              open={open}
+              onClick={() => setOpen(!open)}
+              className='menu menu-item menu-item-link'
+            >
+              بلاگ
+            </a>
           </Link>
         </li>
         <li className='menu menu-item'>
           <Link href='#about-me'>
-            <a className='menu menu-item menu-item-link'>درباره من</a>
-          </Link>
-        </li>
-        <li className='menu menu-item'>
-          <Link href='#tech-stack'>
-            <a className='menu menu-item menu-item-link'>قابلیت ها</a>
+            <a
+              open={open}
+              onClick={() => setOpen(!open)}
+              className='menu menu-item menu-item-link'
+            >
+              درباره من
+            </a>
           </Link>
         </li>
         <li className='menu menu-item'>
           <Link href='#resume'>
-            <a className='menu menu-item menu-item-link'>نمونه کار</a>
+            <a
+              open={open}
+              onClick={() => setOpen(!open)}
+              className='menu menu-item menu-item-link'
+            >
+              نمونه کار
+            </a>
+          </Link>
+        </li>
+        <li className='menu menu-item'>
+          <Link href='#tech-stack'>
+            <a
+              open={open}
+              onClick={() => setOpen(!open)}
+              className='menu menu-item menu-item-link'
+            >
+              قابلیت ها
+            </a>
           </Link>
         </li>
         <li className='menu menu-item'>
           <Link href='#contact'>
-            <a className='menu menu-item menu-item-link'>تماس</a>
+            <a
+              open={open}
+              onClick={() => setOpen(!open)}
+              className='menu menu-item menu-item-link'
+            >
+              تماس
+            </a>
           </Link>
         </li>
         <li className='menu menu-item'>
           <Link href='#faq'>
-            <a className='menu menu-item menu-item-link'>سوالات متداول</a>
+            <a
+              open={open}
+              onClick={() => setOpen(!open)}
+              className='menu menu-item menu-item-link'
+            >
+              سوالات متداول
+            </a>
           </Link>
         </li>
       </ul>
