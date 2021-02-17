@@ -25,17 +25,10 @@ const Layout = ({ children }) => {
             }
           }
 
-          @media (max-width: 1200px) {
+          @media (min-width: 768px) and (max-width: 1200px) {
             .content-section {
               margin-right: 80px;
               width: calc(100% - 80px);
-            }
-          }
-          @media (max-width: 768px) {
-            .content-section {
-              margin-right: 0px;
-              width: calc(100%);
-              margin-top: 55px;
             }
           }
         `}

@@ -7,7 +7,7 @@ const IconScroll = () => {
         {`
           .icon-scroll {
             position: absolute;
-            left: -18px;
+            left: -15px;
             width: 38px;
             height: 60px;
             margin-right: 50px;
@@ -42,6 +42,11 @@ const IconScroll = () => {
               animation-iteration-count: infinite;
               -webkit-animation-name: scroll;
               left: 50%;
+            }
+          }
+          @media (max-width: 1200px) {
+            .icon-scroll {
+              display: none;
             }
           }
         `}
