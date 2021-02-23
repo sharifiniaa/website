@@ -2,7 +2,6 @@ const Avatar = () => {
   return (
     <div className='avatar'>
       <img />
-
       <style scoped jsx>
         {`
           .avatar {
@@ -12,22 +11,24 @@ const Avatar = () => {
             left: 1rem;
             background-image: url('/me.png');
             background-size: 100%;
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             box-sizing: border-box;
             border: 5px white solid;
             border-radius: 50%;
             overflow: hidden;
             margin-left: 20px;
             z-index: 3;
-
             box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
             transform: translatey(0px);
             animation: float 6s ease-in-out infinite;
-            // img {
-            //   width: 100%;
-            //   height: 100%;
-            // }
+            @media (min-width: 768px) {
+              display: none;
+            }
+            @media (max-width: 359.98px) {
+              width: 80px;
+              height: 80px;
+            }
           }
           @keyframes float {
             0% {
@@ -42,9 +43,6 @@ const Avatar = () => {
               box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
               transform: translatey(0px);
             }
-          }
-          @media (min-width: 768px) {
-            display: none;
           }
         `}
       </style>

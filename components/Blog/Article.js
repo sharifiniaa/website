@@ -1,4 +1,3 @@
-import React from 'react';
 import Link from 'next/link';
 
 const Article = ({ data }) => {
@@ -20,10 +19,10 @@ const Article = ({ data }) => {
       </Link>
       <div className='article-bottom '>
         <p className='article-bottom  decription text-5 color-light-blue mb-3'>
-          {data.description.slice(0, 195)}...
+          {data.description.slice(0, 100)}...
         </p>
         <div className='article-bottom article-bottom-link w-100 text-align-center'>
-          <Link href='/'>
+          <Link href={`/blog/${data.id}`}>
             <a className='article-bottom  article-bottom-link-title color-white pt-3 pb-3 text-align-center'>
               ادامه مطلب
             </a>

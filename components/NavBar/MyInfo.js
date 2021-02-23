@@ -13,6 +13,11 @@ const MyInfo = () => {
             margin-top: 5rem;
             padding-bottom: 5rem;
           }
+          @media (max-width: 1199.98px) {
+            .my-info-wrapper {
+              display: none;
+            }
+          }
         `}
       </style>
     </div>

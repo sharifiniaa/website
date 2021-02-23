@@ -1,7 +1,5 @@
-import React from 'react';
-
-import Article from '../../containers/Blog/Article';
-import { blog } from '../../mock';
+import Article from './Article';
+import { blog } from '../../mock/index';
 
 const BlogWrapper = () => {
   return (

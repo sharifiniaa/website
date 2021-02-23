@@ -1,7 +1,7 @@
-import React from "react";
-
 const BlogPost = () => {
-  return <div>losdlk;aj flk;sadjgsdajglk;j</div>;
+  return (
+    <div>ggggggggggggggggggggggggl</div>
+  );
 };
 
 export default BlogPost;

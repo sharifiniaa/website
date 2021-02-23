@@ -1,10 +1,10 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSmile } from '@fortawesome/free-regular-svg-icons';
-import InfoText from '../../../components/Contact/infoText';
+import InfoText from '../../../../components/Contact/infoText';
 
-import { contactData } from '../../../mock';
-import ContactForm from '../../../components/Contact/ContactForm';
+import { contactData } from '../../../../mock';
+import ContactForm from '../../../../components/Contact/ContactForm';
 
 const index = () => {
   return (

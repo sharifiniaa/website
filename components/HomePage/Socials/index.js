@@ -10,16 +10,16 @@ import {
 
 const Socials = () => {
   return (
-    <div className='socials d-flex justify-content-start justify-content-md-between align-items-center'>
+    <div className='socials'>
       <a
-        className='socials__link d-flex text-11 color-light-blue link-icon'
+        className='socials__link  text-11 color-light-blue link-icon'
         href='mailto:hosein.sharifinia@gmail.com'
       >
         <FontAwesomeIcon className='socials__link--icon' icon={faEnvelope} />
       </a>
       <a
         href='https://www.instagram.com/hossein.sharifinia'
-        className='socials__link d-flex text-11 color-light-blue link-icon'
+        className='socials__link  text-11 color-light-blue link-icon'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -27,7 +27,7 @@ const Socials = () => {
       </a>
       <a
         href='https://www.linkedin.com/in/hossein-sharifinia'
-        className='socials__link d-flex text-11 color-light-blue link-icon'
+        className='socials__link  text-11 color-light-blue link-icon'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -35,7 +35,7 @@ const Socials = () => {
       </a>
       <a
         href='https://t.me/sharifiniahosein'
-        className='socials__link d-flex text-11 color-light-blue link-icon'
+        className='socials__link  text-11 color-light-blue link-icon'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -43,7 +43,7 @@ const Socials = () => {
       </a>
       <a
         href='https://web.whatsapp.com/send?phone=989115538225'
-        className='socials__link d-flex text-11 color-light-blue link-icon'
+        className='socials__link  text-11 color-light-blue link-icon'
         target='_blank'
         rel='noopener noreferrer'
       >
@@ -51,6 +51,13 @@ const Socials = () => {
       </a>
       <style scoped jsx>
         {`
+          .socials {
+            margin-top: 2rem;
+            display: flex;
+            @media (max-width: 991.98px) {
+              flex-wrap: wrap;
+            }
+          }
           .link-icon {
             transition: all ease 250ms;
             margin-left: 20px;

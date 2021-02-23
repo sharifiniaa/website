@@ -1,5 +1,5 @@
 import React from "react";
-import Timeline from "../../../components/TimeLine";
+import Timeline from "../../../../components/TimeLine";
 
 const index = () => {
   return (

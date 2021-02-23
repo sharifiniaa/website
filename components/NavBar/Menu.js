@@ -6,7 +6,7 @@ const Menu = ({ open, setOpen }) => {
     <div>
       <ul className="menu d-inline-block">
         <li className="menu__menu-item">
-          <Link href="#home">
+          <Link href="/">
             <a
               className="menu__menu-item menu-item-link"
               open={open}
@@ -17,7 +17,7 @@ const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
         <li className="menu__menu-item">
-          <Link href="#blog">
+          <Link href="/blog">
             <a
               open={open}
               onClick={() => setOpen(!open)}
@@ -28,7 +28,7 @@ const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
         <li className="menu__menu-item">
-          <Link href="#about-me">
+          <Link href="/#about-me">
             <a
               open={open}
               onClick={() => setOpen(!open)}
@@ -39,7 +39,7 @@ const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
         <li className="menu__menu-item">
-          <Link href="#resume">
+          <Link href="/#resume">
             <a
               open={open}
               onClick={() => setOpen(!open)}
@@ -50,7 +50,7 @@ const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
         <li className="menu__menu-item">
-          <Link href="#tech-stack">
+          <Link href="/#tech-stack">
             <a
               open={open}
               onClick={() => setOpen(!open)}
@@ -61,7 +61,7 @@ const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
         <li className="menu__menu-item">
-          <Link href="#contact">
+          <Link href="/#contact">
             <a
               open={open}
               onClick={() => setOpen(!open)}
@@ -72,7 +72,7 @@ const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
         <li className="menu__menu-item">
-          <Link href="#faq">
+          <Link href="/#faq">
             <a
               open={open}
               onClick={() => setOpen(!open)}
