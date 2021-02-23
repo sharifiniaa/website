@@ -1,11 +1,11 @@
-import Content from '../containers/ContentSection';
+import ContentSection from '../containers/ContentSection';
 import NavBar from '../containers/NavBar';
 
 const Layout = ({ children }) => {
   return (
     <>
       <NavBar />
-      <Content children={children} />
+      <ContentSection children={children} />
     </>
   );
 };

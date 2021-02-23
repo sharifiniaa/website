@@ -1,4 +1,4 @@
-const Content = ({ children }) => {
+const ContentSection = ({ children }) => {
   return (
     <div className='content-section'>
       {children}
@@ -20,4 +20,4 @@ const Content = ({ children }) => {
   );
 };
 
-export default Content;
+export default ContentSection;
