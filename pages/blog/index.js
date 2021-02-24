@@ -1,4 +1,4 @@
-import BlogPage from '../../containers/ContentSection/BlogPage/BlogPage';
+import BlogPage from '../../containers/ContentSection/BlogPage';
 
 function index() {
   return <BlogPage />;

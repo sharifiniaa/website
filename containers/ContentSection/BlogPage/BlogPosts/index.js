@@ -1,6 +1,6 @@
 import BlogWrapper from '../../../../components/Blog/BlogWrapper';
 
-const index = () => {
+const BlogPosts = () => {
   return (
     <div id='blog' className='last-blog pt-4 bg-color-black'>
       <div className='last-blog__wrapper px-5 '>
@@ -32,4 +32,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default BlogPosts;

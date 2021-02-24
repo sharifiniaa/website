@@ -7,12 +7,20 @@ const BlogPost = () => {
   const { id: postId } = router.query;
 
   return (
-    <div>
+    <div className='blog-post'>
       {blog
         .filter((e) => e.id == postId)
         .map((e) => (
           <Post data={e} key={e} />
         ))}
+      <style scoped jsx>
+        {`
+          .blog-post {
+            padding-left: 5%;
+            padding-right: 5%;            
+          }
+        `}
+      </style>
     </div>
   );
 };

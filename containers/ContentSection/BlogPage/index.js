@@ -1,4 +1,4 @@
-import BlogPosts from './BlogPosts/BlogPosts';
+import BlogPosts from './BlogPosts';
 
 function BlogPage() {
   return <BlogPosts />;

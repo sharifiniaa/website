@@ -1,8 +1,8 @@
 import React from 'react';
 
-import HomeRight from '../../../../components/HomePage/HomeRight';
-import HomeLeft from '../../../../components/HomePage/HomeLeft';
-import Avatar from '../../../../components/HomePage/Avatar';
+import HomeRight from '../../../../components/Home/HomeRight';
+import HomeLeft from '../../../../components/Home/HomeLeft';
+import Avatar from '../../../../components/Home/Avatar';
 
 const Home = () => {
   return (
