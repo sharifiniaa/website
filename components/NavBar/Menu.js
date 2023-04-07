@@ -6,7 +6,7 @@ const Menu = ({ open, setOpen }) => {
     <div>
       <ul className='menu d-inline-block'>
         <li className='menu__menu-item'>
-          <Link href='/'>
+          <Link legacyBehavior href='/'>
             <a
               className='menu__menu-item menu-item-link'
               open={open}
@@ -17,7 +17,7 @@ const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
         <li className='menu__menu-item'>
-          <Link href='/blog'>
+          <Link legacyBehavior href='/blog'>
             <a
               open={open}
               onClick={() => setOpen(!open)}
@@ -28,7 +28,7 @@ const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
         <li className='menu__menu-item'>
-          <Link href='/#about-me'>
+          <Link legacyBehavior href='/#about-me'>
             <a
               open={open}
               onClick={() => setOpen(!open)}
@@ -39,7 +39,7 @@ const Menu = ({ open, setOpen }) => {
           </Link>
         </li>
         <li className='menu__menu-item'>
-          <Link href='/portfolio'>
+          <Link legacyBehavior href='/portfolio'>
             <a
               open={open}
               onClick={() => setOpen(!open)}
@@ -51,35 +51,35 @@ const Menu = ({ open, setOpen }) => {
         </li>
         <li className='menu__menu-item'>
           <Link href='/#tech-stack'>
-            <a
+            {/* <a
               open={open}
               onClick={() => setOpen(!open)}
               className='menu__menu-item menu-item-link'
-            >
-              قابلیت ها
-            </a>
+            > */}
+            قابلیت ها
+            {/* </a> */}
           </Link>
         </li>
         <li className='menu__menu-item'>
           <Link href='/#contact'>
-            <a
+            {/* <a
               open={open}
               onClick={() => setOpen(!open)}
               className='menu__menu-item menu-item-link'
-            >
-              تماس
-            </a>
+            > */}
+            تماس
+            {/* </a> */}
           </Link>
         </li>
         <li className='menu__menu-item'>
           <Link href='/#faq'>
-            <a
+            {/* <a
               open={open}
               onClick={() => setOpen(!open)}
               className='menu__menu-item menu-item-link'
-            >
-              سوالات متداول
-            </a>
+            > */}
+            سوالات متداول
+            {/* </a> */}
           </Link>
         </li>
       </ul>

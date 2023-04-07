@@ -3,7 +3,7 @@ import Link from 'next/link';
 const Article = ({ data }) => {
   return (
     <div className='article-holder  bg-color-gray mb-4'>
-      <Link href='/'>
+      <Link legacyBehavior href='/'>
         <a className='article-top color-white '>
           <div className='article-top image-holder d-block '>
             <img
@@ -22,7 +22,7 @@ const Article = ({ data }) => {
           {data.description.slice(0, 100)}...
         </p>
         <div className='article-bottom article-bottom-link w-100 text-align-center'>
-          <Link href={`/blog/${data.id}`}>
+          <Link legacyBehavior href={`/blog/${data.id}`}>
             <a className='article-bottom  article-bottom-link-title color-white pt-3 pb-3 text-align-center'>
               ادامه مطلب
             </a>

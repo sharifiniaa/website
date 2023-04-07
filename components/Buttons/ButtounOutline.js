@@ -4,7 +4,7 @@ import Link from 'next/link';
 const ButtonOutline = ({ link, title }) => {
   return (
     <div className='button-outline '>
-      <Link href={link ? link : '/'}>
+      <Link legacyBehavior href={link ? link : '/'}>
         <a className='button-outline__tag '>{title}</a>
       </Link>
       <style scoped jsx>
