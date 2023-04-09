@@ -54,9 +54,6 @@ const Socials = () => {
           .socials {
             margin-top: 2rem;
             display: flex;
-            @media (max-width: 991.98px) {
-              flex-wrap: wrap;
-            }
           }
           .link-icon {
             transition: all ease 250ms;
@@ -64,6 +61,12 @@ const Socials = () => {
           }
           .link-icon:hover {
             color: #0582ca;
+          }
+          
+          @media (max-width: 991.98px) {
+            .socials{
+              flex-wrap: wrap;
+            }  
           }
         `}
       </style>

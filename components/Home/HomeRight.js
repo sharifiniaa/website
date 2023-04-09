@@ -24,24 +24,29 @@ const HomeRight = () => {
             display: flex;
             flex-direction: column;
             padding-left: 5%;
-            @media (max-width: 767.98px) {
-              flex: 0 0 100%;
-            }
-            @media (max-width: 359.98px) and(max-height:480px) {
-              padding-top: 100px;
-            }
           }
           .message-link {
             text-decoration: none;
             transition: all 250ms ease;
-            &:hover {
-              color: #0582ca;
-            }
+          }
+          .message-link:hover {
+            color: #0582ca;
           }
           .about-me {
             line-height: 2rem;
             margin-top: 2rem;
             margin-bottom: 3rem;
+          }
+          
+          @media (max-width: 767.98px) {
+              .home-right{
+                flex: 0 0 100%;
+              }
+          }
+          @media (max-width: 359.98px) and(max-height:480px) {
+            .home-right {
+              padding-top: 100px;
+            }
           }
         `}
       </style>

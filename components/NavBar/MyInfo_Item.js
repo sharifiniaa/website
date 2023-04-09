@@ -8,8 +8,6 @@ const MyInfo_Item = ({ title, content }) => {
       <style scoped jsx>{`
         .my-info-item {
           line-height: 100%;
-          &.my-info-item {
-          }
         }
       `}</style>
     </div>

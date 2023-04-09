@@ -23,18 +23,17 @@ const Timeline_item = ({ data }) => {
             position: relative;
             list-style: none;
             transition: 250ms;
-            &:hover {
-              .item-circle {
-                background-color: red;
-                &:after {
-                  opacity: 1;
-                }
-              }
-              .timeline-date {
-                transform: translateX(10px);
-              }
+          }
+          .timeline-item:hover.item-circle {
+             background-color: red;
             }
-            &:before {
+            .timeline-item:hover.item-circle:after{
+              opacity: 1;
+            }
+            .timeline-item:hover.item-circle.timeline-date{
+              transform: translateX(10px);
+            }
+          .timeline-item:before {
               content: "";
               width: 3px;
               height: calc(100% - 35px);
@@ -43,12 +42,12 @@ const Timeline_item = ({ data }) => {
               right: -30px;
               top: 51px;
             }
-          }
           .item-circle {
             position: absolute;
             top: 0;
             right: -30px;
-            &:before {
+          }
+            .item-circle:before {
               content: "";
               display: block;
               width: 35px;
@@ -61,7 +60,7 @@ const Timeline_item = ({ data }) => {
               z-index: 1;
               transition: 300ms;
             }
-            &:after {
+            .item-circle:after {
               content: "";
               position: absolute;
               width: 19px;
@@ -73,7 +72,6 @@ const Timeline_item = ({ data }) => {
               opacity: 0;
               transition: opacity 300ms;
             }
-          }
           .item-content {
             line-height: 160%;
             text-align: right;

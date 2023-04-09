@@ -26,22 +26,25 @@ function NavBar() {
       <style scoped jsx>
         {`
           .navbar {
-            position: fixed;
-            width: 380px;
-            background-color: #051923;
-            height: 100vh;
-            z-index: 2;
-
-            @media (max-width: 1199.98px) {
-              width: 80px;
-            }
-
-            @media (max-width: 767.98px) {
-              height: 60px;
-              width: 100%;
-              z-index: 2;
-            }
-          }
+ position: fixed;
+ width: 380px;
+ background-color: #051923;
+ height: 100vh;
+ z-index: 2;
+}
+ @media (max-width: 1199.98px) {
+ .navbar {
+ width: 80px;
+}
+}
+ @media (max-width: 767.98px) {
+ .navbar {
+ height: 60px;
+ width: 100%;
+ z-index: 2;
+}
+}
+ 
         `}
       </style>
     </div>

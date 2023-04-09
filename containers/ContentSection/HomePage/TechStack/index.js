@@ -32,23 +32,20 @@ const index = () => {
             margin-right: -100px;
           }
           .tech-stack {
-            position: relative;
-            .tech-stack-wrapper {
-              .tech-stack-content {
-                max-width: 1300px;
-                .tech-stack-content-skills {
-                }
-                .tech-stack-content-title {
-                  line-height: 100%;
-                  margin: 0 0 1rem;
-                  color: #0582ca;
-                }
-                .tech-stack-content-text {
-                  line-height: 35px;
-                }
-              }
-            }
-          }
+ position: relative;
+}
+ .tech-stack .tech-stack-wrapper .tech-stack-content {
+ max-width: 1300px;
+}
+ .tech-stack .tech-stack-wrapper .tech-stack-content .tech-stack-content-title {
+ line-height: 100%;
+ margin: 0 0 1rem;
+ color: #0582ca;
+}
+ .tech-stack .tech-stack-wrapper .tech-stack-content .tech-stack-content-text {
+ line-height: 35px;
+}
+ 
         `}
       </style>
     </div>

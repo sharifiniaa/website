@@ -28,9 +28,6 @@ const Post = ({ data }) => {
         .article {
           display: flex;
           flex-direction: row;
-          @media (max-width: 991.98px) {
-            flex-direction: column;
-          }
         }
         .article-section {
           display: flex;
@@ -40,12 +37,6 @@ const Post = ({ data }) => {
           display: block;
           max-height: 340px;
           overflow: hidden;
-
-          @media (min-width: 768px) {
-            flex: 300px 0 0;
-            margin: 2rem 0 0 2rem;
-            max-height: none;
-          }
         }
         .article-image img {
           width: 100%;
@@ -57,6 +48,21 @@ const Post = ({ data }) => {
         .article-paragraph {
           line-height: 2rem;
         }
+        
+          @media (max-width: 991.98px) {
+            .article{
+              flex-direction: column;
+            }
+          }
+          
+          @media (min-width: 768px) {
+            .article-image{
+              flex: 300px 0 0;
+              margin: 2rem 0 0 2rem;
+              max-height: none;
+            }
+          }
+        
       `}</style>
     </div>
   );

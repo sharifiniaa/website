@@ -21,10 +21,13 @@ const Home = () => {
             align-items: center;
             line-height: 6rem;
             background-color: #024a80;
-            @media (max-width: 767.98px) {
-              height: 140vh;
-            }
           }
+          @media (max-width: 767.98px) {
+          .home-section{
+              height: 140vh;
+          }
+          
+            }
         `}
       </style>
     </div>

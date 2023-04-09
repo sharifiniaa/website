@@ -17,18 +17,18 @@ const ButtonOutline = ({ link, title }) => {
             cursor: pointer;
             transition: all 250ms linear;
             border-radius: 50px;
-            &__tag {
+            }
+            .button-outline__tag {
               color: #faefff;
               vertical-align: middle;
               text-decoration: none;
             }
-            &:hover {
-              .button-outline__tag {
-                color: #fff;
-              }
+            .button-outline__tag:hover {
               background-color: #0582ca;
             }
-          }
+            .button-outline__tag:hover.button-outline__tag {
+                color: #fff;
+              }
         `}
       </style>
     </div>

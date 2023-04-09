@@ -11,7 +11,6 @@ function RightNav({ open, setOpen }) {
       <style scoped jsx>
         {`
           .right-nav {
-            position: relative;
             padding-right: 5rem;
             padding-top: 5rem;
             height: 100vh;

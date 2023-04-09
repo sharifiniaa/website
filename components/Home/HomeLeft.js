@@ -12,9 +12,11 @@ const HomeLeft = () => {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50%;
-            @media (max-width: 767.98px) {
+          }
+          @media (max-width: 767.98px) {
+            .home-left {
               display: none;
-            }
+            }    
           }
         `}
       </style>

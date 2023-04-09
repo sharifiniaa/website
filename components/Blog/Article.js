@@ -18,7 +18,7 @@ const Article = ({ data }) => {
         </a>
       </Link>
       <div className='article-bottom '>
-        <p className='article-bottom  decription text-5 color-light-blue mb-3'>
+        <p className='article-bottom description text-5 color-light-blue mb-3'>
           {data.description.slice(0, 100)}...
         </p>
         <div className='article-bottom article-bottom-link w-100 text-align-center'>
@@ -56,7 +56,7 @@ const Article = ({ data }) => {
           .article-top-title {
             line-height: 2rem;
           }
-          .decription {
+          .description {
             line-height: 30px;
           }
           .article-bottom-link-title {

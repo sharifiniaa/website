@@ -36,18 +36,18 @@ function BurgerIcon({ open, setOpen }) {
             background-color: #bfd1df;
             transform-origin: 1px;
             transition: all 0.3s linear;
-
-            &:nth-child(1) {
+          }
+          
+            .burger-nth-child.opened:nth-child(1) {
               transform: rotate(45deg);
             }
-            &:nth-child(2) {
+            .burger-nth-child.opened:nth-child(2) {
               transform: translateX(100%);
               opacity: 0;
             }
-            &:nth-child(3) {
+            .burger-nth-child.opened:nth-child(3) {
               transform: rotate(-45deg);
             }
-          }
 
           @media (min-width: 1200px) {
             .burger-icon {

@@ -33,22 +33,21 @@ const index = () => {
       <style scoped jsx>
         {`
           .about {
-            position: relative;
-            &__wrapper {
-              .about-content {
-                max-width: 1300px;
-                &__title {
-                  line-height: 100%;
-                }
-                &__text {
-                  line-height: 30px;
-                }
-                &__info {
-                  line-height: 35px;
-                }
-              }
-            }
-          }
+   position: relative;
+}
+ .about__wrapper .about-content {
+   max-width: 1300px;
+}
+ .about__wrapper .about-content__title {
+   line-height: 100%;
+}
+ .about__wrapper .about-content__text {
+   line-height: 30px;
+}
+ .about__wrapper .about-content__info {
+  line-height: 35px;
+}
+ 
           .about-me-description-icon {
             vertical-align: middle;
             display: inline;

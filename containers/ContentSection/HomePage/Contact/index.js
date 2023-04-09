@@ -26,7 +26,7 @@ const index = () => {
               </p>
               <div className='contact-content__holder--info__personal mt-4'>
                 {contactData.personal_info.map((item, i) => (
-                  <InfoText title={item.title} text={item.text} />
+                  <InfoText key={i} title={item.title} text={item.text} />
                 ))}
               </div>
             </div>
@@ -39,38 +39,30 @@ const index = () => {
       <style scoped jsx>
         {`
           .contact {
-            position: relative;
-
-            &__wrapper {
-              padding-bottom: 150px;
-              .contact-content {
-                max-width: 1300px;
-                &__title {
-                  line-height: 100%;
-                }
-
-                &__holder {
-                  //   margin-left: 5%;
-                  line-height: 30px;
-                  &--info {
-                    &__text {
-                      line-height: 35px;
-
-                      &--icon {
-                        vertical-align: middle;
-                      }
-                    }
-
-                    &__personal {
-                      &--line {
-                        line-height: 30px;
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
+   position: relative;
+}
+ .contact__wrapper {
+   padding-bottom: 150px;
+}
+ .contact__wrapper .contact-content {
+   max-width: 1300px;
+}
+ .contact__wrapper .contact-content__title {
+   line-height: 100%;
+}
+ .contact__wrapper .contact-content__holder {
+   line-height: 30px;
+}
+ .contact__wrapper .contact-content__holder--info__text {
+   line-height: 35px;
+}
+ .contact__wrapper .contact-content__holder--info__text--icon {
+   vertical-align: middle;
+}
+ .contact__wrapper .contact-content__holder--info__personal--line {
+   line-height: 30px;
+}
+ 
           @media (max-width: 768px) {
             .contact-content__holder {
               flex-direction: column;

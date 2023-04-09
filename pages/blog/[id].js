@@ -7,17 +7,17 @@ const BlogPost = () => {
   const { id: postId } = router.query;
 
   return (
-    <div className='blog-post'>
+    <div className="blog-post">
       {blog
-        .filter((e) => e.id == postId)
+        .filter((e) => e.id === postId)
         .map((e) => (
-          <Post data={e} key={e} />
+          <Post data={e} key={e.id} />
         ))}
       <style scoped jsx>
         {`
           .blog-post {
             padding-left: 5%;
-            padding-right: 5%;            
+            padding-right: 5%;
           }
         `}
       </style>

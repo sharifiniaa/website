@@ -17,29 +17,30 @@ const TechItem = ({ item }) => {
       </div>
       <style scoped jsx>
         {`
-          .skills {
-            margin: 0.8rem 0;
-            .skills-image-holder {
-              text-align: center;
-              padding-top: 0.5em;
-              padding-bottom: 0.5em;
-              .skills-image-holder-image {
-                max-width: 60px;
-                max-height: 80px;
-              }
-            }
-            .skills-text-holder {
-              display: flex;
-              align-items: center;
-              justify-content: flex-end;
-              .skills-text-holder-name {
-                font-size: 22px;
-                line-height: 35px;
-                font-weight: 500;
-                color: #bfd1df;
-              }
-            }
-          }
+         .skills {
+ margin: 0.8rem 0;
+}
+ .skills .skills-image-holder {
+ text-align: center;
+ padding-top: 0.5em;
+ padding-bottom: 0.5em;
+}
+ .skills .skills-image-holder .skills-image-holder-image {
+ max-width: 60px;
+ max-height: 80px;
+}
+ .skills .skills-text-holder {
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+}
+ .skills .skills-text-holder .skills-text-holder-name {
+ font-size: 22px;
+ line-height: 35px;
+ font-weight: 500;
+ color: #bfd1df;
+}
+ 
         `}
       </style>
     </div>
