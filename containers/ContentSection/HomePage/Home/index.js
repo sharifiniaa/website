@@ -6,7 +6,7 @@ import Avatar from '../../../../components/Home/Avatar';
 
 const Home = () => {
   return (
-    <div id='home' className='home-section'>
+    <div id="home" className="home-section">
       <HomeRight />
       <HomeLeft />
       <Avatar />
@@ -23,11 +23,10 @@ const Home = () => {
             background-color: #024a80;
           }
           @media (max-width: 767.98px) {
-          .home-section{
+            .home-section {
               height: 140vh;
-          }
-          
             }
+          }
         `}
       </style>
     </div>

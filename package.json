@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "prettierfix": "yarn prettier --config .prettierrc.json --ignore-path .prettierignore --write .",
+    "lintfix": "eslint --fix --ext .js,.ts,.tsx --ignore-path .gitignore --ignore-path .eslintignore ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -20,5 +22,14 @@
     "react-scroll": "^1.8.1",
     "sass": "^1.61.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.34",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "eslint": "^8.38.0",
+    "eslint-config-next": "^13.3.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "2.8.7",
+    "typescript": "^5.0.4"
+  }
 }

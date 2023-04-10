@@ -1,5 +1,5 @@
-import React from "react";
-import Timeline from "../../../../components/TimeLine";
+import React from 'react';
+import Timeline from '../../../../components/TimeLine';
 
 const index = () => {
   return (
@@ -15,15 +15,14 @@ const index = () => {
       <style scoped jsx>
         {`
           .resume {
- position: relative;
-}
- .resume__wrapper .resume-content {
- max-width: 1300px;
-}
- .resume__wrapper .resume-content__title {
- line-height: 100%;
-}
- 
+            position: relative;
+          }
+          .resume__wrapper .resume-content {
+            max-width: 1300px;
+          }
+          .resume__wrapper .resume-content__title {
+            line-height: 100%;
+          }
         `}
       </style>
     </div>

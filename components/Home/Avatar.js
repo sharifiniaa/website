@@ -1,6 +1,6 @@
 const Avatar = () => {
   return (
-    <div className='avatar'>
+    <div className="avatar">
       <img />
       <style scoped jsx>
         {`
@@ -23,16 +23,16 @@ const Avatar = () => {
             animation: float 6s ease-in-out infinite;
           }
           @media (min-width: 768px) {
-              .avatar {
-                display: none;
-              }
+            .avatar {
+              display: none;
             }
-            @media (max-width: 359.98px) {
-              .avatar {
-                width: 80px;
-                height: 80px;
-              }
+          }
+          @media (max-width: 359.98px) {
+            .avatar {
+              width: 80px;
+              height: 80px;
             }
+          }
           @keyframes float {
             0% {
               box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);

@@ -1,0 +1,22 @@
+{
+    "plugins": ["@typescript-eslint"],
+    "extends": [
+      "next/core-web-vitals",
+      "plugin:@typescript-eslint/recommended",
+      "prettier"
+    ],
+    "rules": {
+      "@typescript-eslint/no-unused-vars": "error",
+      "@typescript-eslint/no-explicit-any": "error",
+      "no-console": ["error", {"allow": ["warn", "error"]}],
+      "prefer-const": "error",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "react/jsx-curly-brace-presence": [
+        "error",
+        {"props": "never", "children": "never"}
+      ]
+    },
+    "ignorePatterns": ["/node_modules/**", "/build/**"]
+  }
+  

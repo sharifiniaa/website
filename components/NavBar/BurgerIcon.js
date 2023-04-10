@@ -1,8 +1,8 @@
 import React from 'react';
 
-function BurgerIcon({ open, setOpen }) {
+function BurgerIcon({open, setOpen}) {
   return (
-    <div className='burger-icon' open={open} onClick={() => setOpen(!open)}>
+    <div className="burger-icon" open={open} onClick={() => setOpen(!open)}>
       <div className={`burger-nth-child ${open ? 'opened' : ''}`} />
       <div className={`burger-nth-child ${open ? 'opened' : ''}`} />
       <div className={`burger-nth-child ${open ? 'opened' : ''}`} />
@@ -37,17 +37,17 @@ function BurgerIcon({ open, setOpen }) {
             transform-origin: 1px;
             transition: all 0.3s linear;
           }
-          
-            .burger-nth-child.opened:nth-child(1) {
-              transform: rotate(45deg);
-            }
-            .burger-nth-child.opened:nth-child(2) {
-              transform: translateX(100%);
-              opacity: 0;
-            }
-            .burger-nth-child.opened:nth-child(3) {
-              transform: rotate(-45deg);
-            }
+
+          .burger-nth-child.opened:nth-child(1) {
+            transform: rotate(45deg);
+          }
+          .burger-nth-child.opened:nth-child(2) {
+            transform: translateX(100%);
+            opacity: 0;
+          }
+          .burger-nth-child.opened:nth-child(3) {
+            transform: rotate(-45deg);
+          }
 
           @media (min-width: 1200px) {
             .burger-icon {

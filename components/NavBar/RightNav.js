@@ -2,9 +2,9 @@ import IconScroll from './IconScroll';
 import Menu from './Menu';
 import MyInfo from './MyInfo';
 
-function RightNav({ open, setOpen }) {
+function RightNav({open, setOpen}) {
   return (
-    <div className='right-nav'>
+    <div className="right-nav">
       <Menu open={open} setOpen={setOpen} />
       <MyInfo />
       <IconScroll />

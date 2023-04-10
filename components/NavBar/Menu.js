@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-const Menu = ({ open, setOpen }) => {
+const Menu = ({open, setOpen}) => {
   return (
     <div>
       <ul className="menu d-inline-block">
@@ -47,32 +47,32 @@ const Menu = ({ open, setOpen }) => {
         </li>
         <li className="menu__menu-item">
           <Link legacyBehavior href="/#tech-stack">
-             <a
+            <a
               onClick={() => setOpen(!open)}
-              className='menu__menu-item menu-item-link'
+              className="menu__menu-item menu-item-link"
             >
-            قابلیت ها
-             </a>
+              قابلیت ها
+            </a>
           </Link>
         </li>
         <li className="menu__menu-item">
           <Link legacyBehavior href="/#contact">
-             <a
+            <a
               onClick={() => setOpen(!open)}
-              className='menu__menu-item menu-item-link'
+              className="menu__menu-item menu-item-link"
             >
-            تماس
-             </a>
+              تماس
+            </a>
           </Link>
         </li>
         <li className="menu__menu-item">
           <Link legacyBehavior href="/#faq">
-             <a
+            <a
               onClick={() => setOpen(!open)}
-              className='menu__menu-item menu-item-link'
+              className="menu__menu-item menu-item-link"
             >
-            سوالات متداول
-             </a>
+              سوالات متداول
+            </a>
           </Link>
         </li>
       </ul>
@@ -82,39 +82,39 @@ const Menu = ({ open, setOpen }) => {
             list-style: none;
             background-color: transparent;
           }
-          
+
           .menu__menu-item {
-          font-size: 30px;
+            font-size: 30px;
           }
-          
+
           .menu-item-link {
-                color: #fff;
-                padding: 5px 0;
-                position: relative;
-                font-size: 28px;
-                line-height: 50px;
-                font-weight: 700;
-                text-decoration: none;
-                }
+            color: #fff;
+            padding: 5px 0;
+            position: relative;
+            font-size: 28px;
+            line-height: 50px;
+            font-weight: 700;
+            text-decoration: none;
+          }
           .menu-item-link:after {
-                  content: '';
-                  display: block;
-                  width: 0;
-                  height: 15px;
-                  background-color: #0582ca;
-                  transition: width 0.3s;
-                  position: absolute;
-                  bottom: 1px;
-                  z-index: -1;
-                }
-                
-                .menu-item-link:hover::after{
-                  width: 110%;
-                }
-                
-                .menu-item-link:focus::after {
-                width: 110%;
-                }
+            content: '';
+            display: block;
+            width: 0;
+            height: 15px;
+            background-color: #0582ca;
+            transition: width 0.3s;
+            position: absolute;
+            bottom: 1px;
+            z-index: -1;
+          }
+
+          .menu-item-link:hover::after {
+            width: 110%;
+          }
+
+          .menu-item-link:focus::after {
+            width: 110%;
+          }
         `}
       </style>
     </div>

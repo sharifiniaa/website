@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSmile } from "@fortawesome/free-regular-svg-icons";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faSmile} from '@fortawesome/free-regular-svg-icons';
 
-import { about } from "../../../../mock";
-import ButtonOutline from "../../../../components/Buttons/ButtounOutline";
+import {about} from '../../../../mock';
+import ButtonOutline from '../../../../components/Buttons/ButtounOutline';
 
 const index = () => {
   return (
@@ -19,7 +19,7 @@ const index = () => {
           </p>
           <br />
           <p className="about-content__info text-7 m-0 color-light-blue">
-            {about.text2}{" "}
+            {about.text2}{' '}
             <FontAwesomeIcon
               className="about-me-description-icon text-10 "
               icon={faSmile}
@@ -33,21 +33,21 @@ const index = () => {
       <style scoped jsx>
         {`
           .about {
-   position: relative;
-}
- .about__wrapper .about-content {
-   max-width: 1300px;
-}
- .about__wrapper .about-content__title {
-   line-height: 100%;
-}
- .about__wrapper .about-content__text {
-   line-height: 30px;
-}
- .about__wrapper .about-content__info {
-  line-height: 35px;
-}
- 
+            position: relative;
+          }
+          .about__wrapper .about-content {
+            max-width: 1300px;
+          }
+          .about__wrapper .about-content__title {
+            line-height: 100%;
+          }
+          .about__wrapper .about-content__text {
+            line-height: 30px;
+          }
+          .about__wrapper .about-content__info {
+            line-height: 35px;
+          }
+
           .about-me-description-icon {
             vertical-align: middle;
             display: inline;

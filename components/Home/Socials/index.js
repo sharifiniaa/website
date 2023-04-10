@@ -1,6 +1,6 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons';
 import {
   faInstagram,
   faLinkedin,
@@ -10,44 +10,44 @@ import {
 
 const Socials = () => {
   return (
-    <div className='socials'>
+    <div className="socials">
       <a
-        className='socials__link  text-11 color-light-blue link-icon'
-        href='mailto:hosein.sharifinia@gmail.com'
+        className="socials__link  text-11 color-light-blue link-icon"
+        href="mailto:hosein.sharifinia@gmail.com"
       >
-        <FontAwesomeIcon className='socials__link--icon' icon={faEnvelope} />
+        <FontAwesomeIcon className="socials__link--icon" icon={faEnvelope} />
       </a>
       <a
-        href='https://www.instagram.com/hossein.sharifinia'
-        className='socials__link  text-11 color-light-blue link-icon'
-        target='_blank'
-        rel='noopener noreferrer'
+        href="https://www.instagram.com/hossein.sharifinia"
+        className="socials__link  text-11 color-light-blue link-icon"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <FontAwesomeIcon className='socials__link--icon' icon={faInstagram} />
+        <FontAwesomeIcon className="socials__link--icon" icon={faInstagram} />
       </a>
       <a
-        href='https://www.linkedin.com/in/hossein-sharifinia'
-        className='socials__link  text-11 color-light-blue link-icon'
-        target='_blank'
-        rel='noopener noreferrer'
+        href="https://www.linkedin.com/in/hossein-sharifinia"
+        className="socials__link  text-11 color-light-blue link-icon"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <FontAwesomeIcon className='socials__link--icon' icon={faLinkedin} />
+        <FontAwesomeIcon className="socials__link--icon" icon={faLinkedin} />
       </a>
       <a
-        href='https://t.me/sharifiniahosein'
-        className='socials__link  text-11 color-light-blue link-icon'
-        target='_blank'
-        rel='noopener noreferrer'
+        href="https://t.me/sharifiniahosein"
+        className="socials__link  text-11 color-light-blue link-icon"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <FontAwesomeIcon className='socials__link--icon' icon={faTelegram} />
+        <FontAwesomeIcon className="socials__link--icon" icon={faTelegram} />
       </a>
       <a
-        href='https://web.whatsapp.com/send?phone=989115538225'
-        className='socials__link  text-11 color-light-blue link-icon'
-        target='_blank'
-        rel='noopener noreferrer'
+        href="https://web.whatsapp.com/send?phone=989115538225"
+        className="socials__link  text-11 color-light-blue link-icon"
+        target="_blank"
+        rel="noopener noreferrer"
       >
-        <FontAwesomeIcon className='socials__link--icon' icon={faWhatsapp} />
+        <FontAwesomeIcon className="socials__link--icon" icon={faWhatsapp} />
       </a>
       <style scoped jsx>
         {`
@@ -62,11 +62,11 @@ const Socials = () => {
           .link-icon:hover {
             color: #0582ca;
           }
-          
+
           @media (max-width: 991.98px) {
-            .socials{
+            .socials {
               flex-wrap: wrap;
-            }  
+            }
           }
         `}
       </style>

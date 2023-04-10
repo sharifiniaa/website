@@ -1,14 +1,14 @@
-const Post = ({ data }) => {
+const Post = ({data}) => {
   return (
-    <div className='post'>
-      <h1 className='page-title'>بلاگ</h1>
-      <div className='article'>
-        <div className='article-image'>
-          <img alt='' src='https://picsum.photos/600/500' />
+    <div className="post">
+      <h1 className="page-title">بلاگ</h1>
+      <div className="article">
+        <div className="article-image">
+          <img alt="" src="https://picsum.photos/600/500" />
         </div>
-        <div className='article-section'>
-          <h4 className='article-title text-10 color-blue'>{data.title}</h4>
-          <p className='article-paragraph'>{data.description}</p>
+        <div className="article-section">
+          <h4 className="article-title text-10 color-blue">{data.title}</h4>
+          <p className="article-paragraph">{data.description}</p>
         </div>
       </div>
       <style scoped jsx>{`
@@ -48,21 +48,20 @@ const Post = ({ data }) => {
         .article-paragraph {
           line-height: 2rem;
         }
-        
-          @media (max-width: 991.98px) {
-            .article{
-              flex-direction: column;
-            }
+
+        @media (max-width: 991.98px) {
+          .article {
+            flex-direction: column;
           }
-          
-          @media (min-width: 768px) {
-            .article-image{
-              flex: 300px 0 0;
-              margin: 2rem 0 0 2rem;
-              max-height: none;
-            }
+        }
+
+        @media (min-width: 768px) {
+          .article-image {
+            flex: 300px 0 0;
+            margin: 2rem 0 0 2rem;
+            max-height: none;
           }
-        
+        }
       `}</style>
     </div>
   );
