@@ -1,11 +1,16 @@
+import {ReactNode} from 'react';
 import ContentSection from '../containers/ContentSection';
 import NavBar from '../containers/NavBar';
 
-const Layout = ({ children }) => {
+type Props = {
+  children: ReactNode;
+};
+
+const Layout = ({children}: Props) => {
   return (
     <>
       <NavBar />
-      <ContentSection children={children} />
+      <ContentSection>{children}</ContentSection>
     </>
   );
 };

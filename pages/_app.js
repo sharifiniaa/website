@@ -2,9 +2,10 @@
 import '../assets/styles/css/css-reset.css';
 import '../assets/styles/css/bootstrap-grid.min.css';
 import '../assets/styles/css/main.css';
+import '../assets/styles/sass/styles.scss';
 import Layout from '../components/layout';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({Component, pageProps}) {
   return (
     <Layout>
       <Component {...pageProps} />

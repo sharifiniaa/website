@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 
-const ButtonOutline = ({ link, title }) => {
+const ButtonOutline = ({link, title}) => {
   return (
-    <div className='button-outline '>
-      <Link href={link ? link : '/'}>
-        <a className='button-outline__tag '>{title}</a>
+    <div className="button-outline ">
+      <Link legacyBehavior href={link ? link : '/'}>
+        <a className="button-outline__tag ">{title}</a>
       </Link>
       <style scoped jsx>
         {`
@@ -17,17 +17,17 @@ const ButtonOutline = ({ link, title }) => {
             cursor: pointer;
             transition: all 250ms linear;
             border-radius: 50px;
-            &__tag {
-              color: #faefff;
-              vertical-align: middle;
-              text-decoration: none;
-            }
-            &:hover {
-              .button-outline__tag {
-                color: #fff;
-              }
-              background-color: #0582ca;
-            }
+          }
+          .button-outline__tag {
+            color: #faefff;
+            vertical-align: middle;
+            text-decoration: none;
+          }
+          .button-outline__tag:hover {
+            background-color: #0582ca;
+          }
+          .button-outline__tag:hover.button-outline__tag {
+            color: #fff;
           }
         `}
       </style>

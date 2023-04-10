@@ -2,16 +2,15 @@ import IconScroll from './IconScroll';
 import Menu from './Menu';
 import MyInfo from './MyInfo';
 
-function RightNav({ open, setOpen }) {
+function RightNav({open, setOpen}) {
   return (
-    <div className='right-nav'>
+    <div className="right-nav">
       <Menu open={open} setOpen={setOpen} />
       <MyInfo />
       <IconScroll />
       <style scoped jsx>
         {`
           .right-nav {
-            position: relative;
             padding-right: 5rem;
             padding-top: 5rem;
             height: 100vh;

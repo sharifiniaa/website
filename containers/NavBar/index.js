@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import Burger from '../../components/NavBar/Burger';
 
 function NavBar() {
@@ -7,7 +7,7 @@ function NavBar() {
   const navRef = useRef();
 
   useEffect(() => {
-    const handler = (event) => {
+    const handler = event => {
       if (!navRef.current.contains(event.target)) {
         setOpen(false);
       }
@@ -21,7 +21,7 @@ function NavBar() {
   });
 
   return (
-    <div ref={navRef} className='navbar'>
+    <div ref={navRef} className="navbar">
       <Burger open={open} setOpen={setOpen} />
       <style scoped jsx>
         {`
@@ -31,12 +31,14 @@ function NavBar() {
             background-color: #051923;
             height: 100vh;
             z-index: 2;
-
-            @media (max-width: 1199.98px) {
+          }
+          @media (max-width: 1199.98px) {
+            .navbar {
               width: 80px;
             }
-
-            @media (max-width: 767.98px) {
+          }
+          @media (max-width: 767.98px) {
+            .navbar {
               height: 60px;
               width: 100%;
               z-index: 2;

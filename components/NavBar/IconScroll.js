@@ -2,7 +2,7 @@ import React from 'react';
 
 const IconScroll = () => {
   return (
-    <div className='icon-scroll'>
+    <div className="icon-scroll">
       <style scoped jsx>
         {`
           .icon-scroll {
@@ -16,7 +16,7 @@ const IconScroll = () => {
             box-shadow: inset 0 0 0 3px #0582ca;
             border-radius: 25px;
             transition: right 0.5s;
-            &:after {
+            .icon-scroll:after {
               content: '';
               position: absolute;
               z-index: -1;
@@ -27,7 +27,7 @@ const IconScroll = () => {
               transform: translate(10px, -10px);
               transition: all 0.3s;
             }
-            &:before {
+            .icon-scroll:before {
               content: '';
               position: absolute;
               width: 8px;

@@ -2,7 +2,7 @@ import React from 'react';
 
 const HomeLeft = () => {
   return (
-    <div className='home-left'>
+    <div className="home-left">
       <style scoped jsx>
         {`
           .home-left {
@@ -12,7 +12,9 @@ const HomeLeft = () => {
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50%;
-            @media (max-width: 767.98px) {
+          }
+          @media (max-width: 767.98px) {
+            .home-left {
               display: none;
             }
           }
