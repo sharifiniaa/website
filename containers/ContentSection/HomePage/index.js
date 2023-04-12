@@ -1,4 +1,4 @@
-import Home from './Home/index';
+import Home from './introduce/index';
 import LastBlog from './LastBlog/index';
 import AboutMe from './About/index';
 import Resume from './Resume/index';

@@ -1,11 +1,11 @@
 import BurgerIcon from './BurgerIcon';
-import RightNav from './RightNav';
+import Navbar from './Navbar';
 
 function Burger({open, setOpen}) {
   return (
     <>
       <BurgerIcon open={open} setOpen={setOpen} />
-      <RightNav open={open} setOpen={setOpen} />
+      <Navbar open={open} setOpen={setOpen} />
     </>
   );
 }

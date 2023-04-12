@@ -1,5 +1,7 @@
+import { ReactNode } from "react";
+
 type Props =  {
-  children: React.ReactNode
+  children: ReactNode
 }
 
 const ContentSection = ({children} : Props) => {
@@ -8,18 +10,18 @@ const ContentSection = ({children} : Props) => {
       {children}
       <style scoped>{`
         .content-section {
-          margin-right: 380px;
-          width: calc(100% - 380px);
+          margin-left: 320px;
+          width: calc(100% - 320px);
         }
         @media screen and (max-width: 1199.98px) {
           .content-section {
-            margin-right: 80px;
+            margin-left: 80px;
             width: calc(100% - 80px);
           }
         }
         @media screen and (max-width: 767.98px) {
           .content-section {
-            margin-right: 0;
+            margin-left: 0;
             width: 100%;
           }
         }

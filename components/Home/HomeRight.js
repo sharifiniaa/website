@@ -22,8 +22,9 @@ const HomeRight = () => {
           .home-right {
             flex: 0 0 370px;
             display: flex;
+            margin-right: 5%;
             flex-direction: column;
-            padding-left: 5%;
+            padding: 0 5%;
           }
           .message-link {
             text-decoration: none;

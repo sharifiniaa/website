@@ -1,8 +1,8 @@
 import React from 'react';
 
-import HomeRight from '../../../../components/Home/HomeRight';
-import HomeLeft from '../../../../components/Home/HomeLeft';
-import Avatar from '../../../../components/Home/Avatar';
+import HomeRight from 'components/Home/HomeRight';
+import HomeLeft from 'components/Home/HomeLeft';
+import Avatar from 'components/Home/Avatar';
 
 const Home = () => {
   return (
@@ -13,8 +13,7 @@ const Home = () => {
       <style scoped jsx>
         {`
           .home-section {
-            padding-right: 5%;
-
+            //padding-left: 5%;
             height: 100vh;
             display: -webkit-flex;
             display: flex;

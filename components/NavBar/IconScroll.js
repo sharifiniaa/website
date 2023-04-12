@@ -7,16 +7,17 @@ const IconScroll = () => {
         {`
           .icon-scroll {
             position: absolute;
-            left: -15px;
+            right: -20px;
             width: 38px;
             height: 60px;
-            margin-right: 50px;
+            margin-left: 100px;
             bottom: 25px;
             margin-top: -35px;
             box-shadow: inset 0 0 0 3px #0582ca;
             border-radius: 25px;
             transition: right 0.5s;
-            .icon-scroll:after {
+          }
+          .icon-scroll:after {
               content: '';
               position: absolute;
               z-index: -1;
@@ -24,7 +25,7 @@ const IconScroll = () => {
               width: 58px;
               height: 80px;
               border-radius: 25px;
-              transform: translate(10px, -10px);
+              transform: translate(-10px, -10px);
               transition: all 0.3s;
             }
             .icon-scroll:before {
@@ -43,7 +44,6 @@ const IconScroll = () => {
               -webkit-animation-name: scroll;
               left: 50%;
             }
-          }
           @media (max-width: 1200px) {
             .icon-scroll {
               display: none;
