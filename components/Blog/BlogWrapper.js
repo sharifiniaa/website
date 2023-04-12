@@ -3,7 +3,7 @@ import {blog} from '../../mock/index';
 
 const BlogWrapper = () => {
   return (
-    <div className="blog-wrapper d-flex">
+    <div className="blog-wrapper d-flex align-items-center justify-content-between">
       {blog.map((item, i) => (
         <Article data={item} key={i} />
       ))}
