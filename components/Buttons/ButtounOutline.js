@@ -1,9 +1,9 @@
 import React from 'react';
 import Link from 'next/link';
 
-const ButtonOutline = ({link, title}) => {
+const ButtonOutline = ({link, title, square, className}) => {
   return (
-    <div className="button-outline ">
+    <div className={`button-outline ${className} ${square ? 'square' : ''}`}>
       <Link legacyBehavior href={link ? link : '/'}>
         <a className="button-outline__tag ">{title}</a>
       </Link>
@@ -17,17 +17,24 @@ const ButtonOutline = ({link, title}) => {
             cursor: pointer;
             transition: all 250ms linear;
             border-radius: 50px;
+            text-align: center;
           }
           .button-outline__tag {
             color: #faefff;
             vertical-align: middle;
             text-decoration: none;
           }
-          .button-outline__tag:hover {
+          .button-outline:hover {
             background-color: #0582ca;
           }
           .button-outline__tag:hover.button-outline__tag {
             color: #fff;
+          }
+
+          .button-outline.square {
+            border-radius: 0;
+            border-color: #fff;
+            letter-spacing: 8px;
           }
         `}
       </style>

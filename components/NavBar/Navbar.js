@@ -11,7 +11,7 @@ function Navbar({open, setOpen}) {
       <style scoped jsx>
         {`
           .navbar {
-            padding-left: 5rem;
+            padding-left: 4rem;
             padding-top: 5rem;
             height: 100vh;
             width: 320px;

@@ -11,19 +11,19 @@ const index = () => {
     <div id="contact" className="contact pt-4 .bg-color-black">
       <div className="contact__wrapper p-5">
         <div className="contact-content">
-          <h2 className="contact-content__title text-9 mb-3 pt-3 color-blue">
-            تماس با من
+          <h2 className="contact-content__title font-weight-700 text-9 mb-3 pt-3 color-blue">
+            Get in touch
           </h2>
 
           <div className="row contact-content__holder ">
             <div className="contact-content__holder--info  mb-5 col-5">
               <p className="contact-content__holder--info__text color-light-blue text-6 m-0 pb-3">
                 {contactData.section_info}
-                <FontAwesomeIcon
-                  className="contact-content__holder--info__text--icon text-10 d-inline m-0 mr-2"
-                  icon={faSmile}
-                />
               </p>
+              <FontAwesomeIcon
+                className="contact-content__holder--info__text--icon text-10 d-inline m-0 mr-2"
+                icon={faSmile}
+              />
               <div className="contact-content__holder--info__personal mt-4">
                 {contactData.personal_info.map((item, i) => (
                   <InfoText key={i} title={item.title} text={item.text} />
