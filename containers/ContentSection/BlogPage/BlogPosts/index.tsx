@@ -1,4 +1,4 @@
-import BlogWrapper from '../../../../components/Blog/BlogWrapper';
+import BlogWrapper from 'components/Blog/BlogWrapper';
 
 const BlogPosts = () => {
   return (

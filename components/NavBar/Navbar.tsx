@@ -1,8 +1,10 @@
 import IconScroll from './IconScroll';
 import Menu from './Menu';
 import MyInfo from './MyInfo';
+import {FC} from 'react';
+import {IBurger} from './Burger';
 
-function Navbar({open, setOpen}) {
+const Navbar: FC<IBurger> = ({open, setOpen}) => {
   return (
     <div className="navbar">
       <Menu open={open} setOpen={setOpen} />
@@ -44,6 +46,6 @@ function Navbar({open, setOpen}) {
       </style>
     </div>
   );
-}
+};
 
 export default Navbar;

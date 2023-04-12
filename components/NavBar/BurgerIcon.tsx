@@ -1,6 +1,7 @@
-import React from 'react';
+import {FC} from 'react';
+import {IBurger} from './Burger';
 
-function BurgerIcon({open, setOpen}) {
+const BurgerIcon: FC<IBurger> = ({open, setOpen}) => {
   return (
     <div className="burger-icon" onClick={() => setOpen(!open)}>
       <div className={`burger-nth-child ${open ? 'opened' : ''}`} />
@@ -58,6 +59,6 @@ function BurgerIcon({open, setOpen}) {
       </style>
     </div>
   );
-}
+};
 
 export default BurgerIcon;

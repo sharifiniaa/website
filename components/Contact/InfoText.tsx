@@ -1,6 +1,11 @@
-import React from 'react';
+import React, {FC} from 'react';
 
-const InfoText = ({title, text}) => {
+export interface IInfoText {
+  title: string;
+  text: string;
+}
+
+const InfoText: FC<IInfoText> = ({title, text}) => {
   return (
     <div>
       <div className="text-5 font-weight-400 color-light-blue">

@@ -1,10 +1,7 @@
-import React from 'react';
-
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faSmile} from '@fortawesome/free-regular-svg-icons';
-
 import {about} from 'mock';
 import ButtonOutline from 'components/Buttons/ButtounOutline';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faSmile} from '@fortawesome/free-regular-svg-icons';
 
 const index = () => {
   return (

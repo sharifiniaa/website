@@ -1,14 +1,14 @@
-import React, {useEffect, useRef, useState} from 'react';
-import Burger from '../../components/NavBar/Burger';
+import {useEffect, useRef, useState} from 'react';
+import Burger from 'components/NavBar/Burger';
 
 function NavBar() {
   const [open, setOpen] = useState(false);
 
-  const navRef = useRef();
+  const navRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const handler = event => {
-      if (!navRef.current.contains(event.target)) {
+      if (!navRef?.current?.contains(event.target)) {
         setOpen(false);
       }
     };

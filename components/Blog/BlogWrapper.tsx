@@ -1,5 +1,5 @@
 import Article from './Article';
-import {blog} from '../../mock/index';
+import {blog} from 'mock';
 
 const BlogWrapper = () => {
   return (

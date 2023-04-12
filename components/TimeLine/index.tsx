@@ -1,12 +1,11 @@
-import React from 'react';
-import Timeline_item from './Timeline_item';
-import {resume} from '../../mock';
+import TimelineItem from './TimelineItem';
+import {resume} from 'mock';
 
-const index = () => {
+const TimeLine = () => {
   return (
     <ul className="timeline">
       {resume.map((item, i) => (
-        <Timeline_item data={item} key={i} />
+        <TimelineItem data={item} key={i} />
       ))}
       <style scoped>
         {`
@@ -19,4 +18,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default TimeLine;

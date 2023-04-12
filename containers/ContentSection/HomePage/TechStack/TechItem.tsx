@@ -1,6 +1,15 @@
-import React from 'react';
+import {FC} from 'react';
 
-const TechItem = ({item}) => {
+export interface ITechItem {
+  name: string;
+  image: string;
+}
+
+type Props = {
+  item: ITechItem;
+};
+
+const TechItem: FC<Props> = ({item}) => {
   return (
     <div className="skills">
       <div className="skills skills-image-holder">

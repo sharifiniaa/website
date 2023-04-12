@@ -1,7 +1,8 @@
-import React from 'react';
+import {FC} from 'react';
 import Link from 'next/link';
+import {IBurger} from './Burger';
 
-const Menu = ({open, setOpen}) => {
+const Menu: FC<IBurger> = ({open, setOpen}) => {
   return (
     <div>
       <ul className="menu d-inline-block">
@@ -16,7 +17,7 @@ const Menu = ({open, setOpen}) => {
           </Link>
         </li>
         <li className="menu__menu-item">
-          <Link legacyBehavior href="/blog">
+          <Link legacyBehavior href="/index">
             <a
               onClick={() => setOpen(!open)}
               className="menu__menu-item menu-item-link"
@@ -36,7 +37,7 @@ const Menu = ({open, setOpen}) => {
           </Link>
         </li>
         <li className="menu__menu-item">
-          <Link legacyBehavior href="/portfolio">
+          <Link legacyBehavior href="/index">
             <a
               onClick={() => setOpen(!open)}
               className="menu__menu-item menu-item-link"

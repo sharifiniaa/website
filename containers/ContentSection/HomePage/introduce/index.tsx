@@ -4,7 +4,7 @@ import HomeRight from 'components/Home/HomeRight';
 import HomeLeft from 'components/Home/HomeLeft';
 import Avatar from 'components/Home/Avatar';
 
-const Home = () => {
+const Introduce = () => {
   return (
     <div id="home" className="home-section">
       <HomeRight />
@@ -32,4 +32,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Introduce;

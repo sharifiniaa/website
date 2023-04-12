@@ -1,6 +1,10 @@
-import React from 'react';
+import {FC} from 'react';
 
-const MyInfo_Item = ({title, content}) => {
+export interface IMyInfoItem {
+  title: string;
+  content: string;
+}
+const MyInfoItem: FC<IMyInfoItem> = ({title, content}) => {
   return (
     <div className="my-info-item mb-3">
       <p className="my-info-item my-info-item-title mt-2 text-2 color-blue">
@@ -18,4 +22,4 @@ const MyInfo_Item = ({title, content}) => {
   );
 };
 
-export default MyInfo_Item;
+export default MyInfoItem;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Timeline from '../../../../components/TimeLine';
 
-const index = () => {
+const Resume = () => {
   return (
     <div id="resume" className="resume pt-4 bg-color-black">
       <div className="resume__wrapper px-5">
@@ -29,4 +29,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Resume;

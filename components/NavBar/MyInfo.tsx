@@ -1,12 +1,11 @@
-import React from 'react';
-import MyInfo_Item from './MyInfo_Item';
+import MyInfoItem from './MyInfoItem';
 
 const MyInfo = () => {
   return (
     <div className="my-info-wrapper ">
-      <MyInfo_Item title="Name" content="Hossein Sharifinia" />
-      <MyInfo_Item title="Role" content="Software Engineer" />
-      <MyInfo_Item title="Email" content="hosein.sharifinia@gmail.com" />
+      <MyInfoItem title="Name" content="Hossein Sharifinia" />
+      <MyInfoItem title="Role" content="Software Engineer" />
+      <MyInfoItem title="Email" content="hosein.sharifinia@gmail.com" />
       <style scoped jsx>
         {`
           .my-info-wrapper {
