@@ -1,6 +1,6 @@
 import {useRouter} from 'next/router';
-import {blog} from '../../mock/index';
-import Post from '../../components/Blog/Post';
+import {blog} from 'mock';
+import Post from 'components/Blog/Post';
 
 const BlogPost = () => {
   const router = useRouter();

@@ -1,6 +1,16 @@
-import React from 'react';
+import {FC} from 'react';
 
-const Timeline_item = ({data}) => {
+export interface ITimeLineItem {
+  date: number;
+  time_ago: string;
+  text: string;
+}
+
+type Props = {
+  data: ITimeLineItem;
+};
+
+const TimelineItem: FC<Props> = ({data}) => {
   return (
     <div>
       <li className="timeline-item m-0 mr-5 mb-4 pt-1">
@@ -91,4 +101,4 @@ const Timeline_item = ({data}) => {
   );
 };
 
-export default Timeline_item;
+export default TimelineItem;

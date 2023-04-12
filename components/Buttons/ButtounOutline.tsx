@@ -1,7 +1,19 @@
-import React from 'react';
+import React, {FC} from 'react';
 import Link from 'next/link';
 
-const ButtonOutline = ({link, title, square, className}) => {
+export interface IButtonOutline {
+  link?: string;
+  title: string;
+  square?: boolean;
+  className?: string;
+}
+
+const ButtonOutline: FC<IButtonOutline> = ({
+  link,
+  title,
+  square = false,
+  className,
+}) => {
   return (
     <div className={`button-outline ${className} ${square ? 'square' : ''}`}>
       <Link legacyBehavior href={link ? link : '/'}>

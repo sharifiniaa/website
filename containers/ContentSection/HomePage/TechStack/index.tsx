@@ -5,7 +5,7 @@ import {skills} from '../../../../mock';
 
 import TechItem from './TechItem';
 
-const index = () => {
+const TechStack = () => {
   return (
     <div id="tech-stack" className="tech-stack bg-color-black pt-5">
       <div className="tech-stack-wrapper px-5">
@@ -58,4 +58,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default TechStack;

@@ -1,6 +1,18 @@
 import Link from 'next/link';
+import {FC} from 'react';
 
-const Article = ({data}) => {
+export interface IArticle {
+  id: number;
+  title: string;
+  image: string;
+  description: string;
+}
+
+type Props = {
+  data: IArticle;
+};
+
+const Article: FC<Props> = ({data}) => {
   return (
     <div className="article-holder  bg-color-gray mb-4">
       <Link legacyBehavior href="/">

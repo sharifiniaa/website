@@ -1,7 +1,7 @@
 const Avatar = () => {
   return (
     <div className="avatar">
-      <img />
+      <img alt="image" />
       <style scoped jsx>
         {`
           .avatar {

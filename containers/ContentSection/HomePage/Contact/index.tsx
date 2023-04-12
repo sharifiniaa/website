@@ -1,12 +1,12 @@
 import React from 'react';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSmile} from '@fortawesome/free-regular-svg-icons';
-import InfoText from '../../../../components/Contact/infoText';
+import InfoText from '../../../../components/Contact/InfoText';
 
 import {contactData} from '../../../../mock';
 import ContactForm from '../../../../components/Contact/ContactForm';
 
-const index = () => {
+const Contact = () => {
   return (
     <div id="contact" className="contact pt-4 .bg-color-black">
       <div className="contact__wrapper p-5">
@@ -84,4 +84,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Contact;
