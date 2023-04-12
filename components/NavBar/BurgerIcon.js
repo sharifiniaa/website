@@ -2,7 +2,7 @@ import React from 'react';
 
 function BurgerIcon({open, setOpen}) {
   return (
-    <div className="burger-icon" open={open} onClick={() => setOpen(!open)}>
+    <div className="burger-icon" onClick={() => setOpen(!open)}>
       <div className={`burger-nth-child ${open ? 'opened' : ''}`} />
       <div className={`burger-nth-child ${open ? 'opened' : ''}`} />
       <div className={`burger-nth-child ${open ? 'opened' : ''}`} />
@@ -14,7 +14,7 @@ function BurgerIcon({open, setOpen}) {
             height: 2rem;
             position: fixed;
             top: 15px;
-            right: 20px;
+            left: 20px;
             display: flex;
             cursor: pointer;
             justify-content: space-around;
