@@ -4,10 +4,17 @@ import {resume} from '../../mock';
 
 const index = () => {
   return (
-    <ul className="timeline m-0 p-0 pr-5">
+    <ul className="timeline">
       {resume.map((item, i) => (
         <Timeline_item data={item} key={i} />
       ))}
+      <style scoped>
+        {`
+          .timeline{
+              padding-left: 100px;
+          }
+        `}
+      </style>
     </ul>
   );
 };

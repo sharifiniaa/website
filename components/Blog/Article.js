@@ -33,8 +33,10 @@ const Article = ({data}) => {
         {`
           .article-holder {
             padding: 36px;
-            margin-left: 3%;
             width: 47%;
+          }
+          .article-holder:nth-child(2) {
+            margin-left: 3%;
           }
           .article-top {
             transition: color 250ms linear;
