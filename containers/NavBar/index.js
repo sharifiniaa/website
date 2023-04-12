@@ -27,7 +27,7 @@ function NavBar() {
         {`
           .navbar {
             position: fixed;
-            width: 380px;
+            width: 320px;
             background-color: #051923;
             height: 100vh;
             z-index: 2;
