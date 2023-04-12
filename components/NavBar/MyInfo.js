@@ -4,9 +4,9 @@ import MyInfo_Item from './MyInfo_Item';
 const MyInfo = () => {
   return (
     <div className="my-info-wrapper ">
-      <MyInfo_Item title="نام" content="حسین شریفی نیا" />
-      <MyInfo_Item title="سمت" content="برنامه نویس فرانت اند" />
-      <MyInfo_Item title="ایمیل" content="hosein.sharifinia@gmail.com" />
+      <MyInfo_Item title="Name" content="Hossein Sharifinia" />
+      <MyInfo_Item title="Role" content="Software Engineer" />
+      <MyInfo_Item title="Email" content="hosein.sharifinia@gmail.com" />
       <style scoped jsx>
         {`
           .my-info-wrapper {

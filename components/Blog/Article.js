@@ -21,10 +21,10 @@ const Article = ({data}) => {
         <p className="article-bottom description text-5 color-light-blue mb-3">
           {data.description.slice(0, 100)}...
         </p>
-        <div className="article-bottom article-bottom-link w-100 text-align-center">
+        <div className="article-bottom article-bottom-link w-100">
           <Link legacyBehavior href={`/blog/${data.id}`}>
-            <a className="article-bottom  article-bottom-link-title color-white pt-3 pb-3 text-align-center">
-              ادامه مطلب
+            <a className="article-bottom article-bottom-link-title color-white pt-3 pb-3">
+              Continue reading..
             </a>
           </Link>
         </div>
@@ -64,6 +64,10 @@ const Article = ({data}) => {
           .article-bottom-link-title {
             transition: color 250ms linear;
             text-decoration: none;
+            margin: 0 auto;
+            width: 100%;
+            display: inline-block;
+            text-align: center;
             &:hover {
               color: #0582ca;
             }

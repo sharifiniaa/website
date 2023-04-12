@@ -5,18 +5,18 @@ const ContactForm = () => {
   return (
     <form className="contact-form bg-color-dark-blue p-5">
       <div className="py-3 mt-2 mb-0 text-5">
-        <input name="name" type="text" placeholder="نام" />
+        <input name="name" type="text" placeholder="Name" />
       </div>
       <div className="py-3 mt-2 mb-0 text-5">
-        <input name="email" type="email" placeholder="ایمیل" />
+        <input name="email" type="email" placeholder="Email" />
       </div>
       <div className="py-3 mt-2 mb-0 text-5">
-        <input name="subject" type="text" placeholder="موضوع" />
+        <input name="subject" type="text" placeholder="Subject" />
       </div>
       <div className="py-3 mt-2 mb-0 text-5">
-        <textarea row="6" name="message" placeholder="پیام شما" />
+        <textarea rows="6" name="message" placeholder="Message" />
       </div>
-      <ButtonOutline title="ارسال پیام" />
+      <ButtonOutline square className="d-block" title="SEND" />
       <style scoped jsx>
         {`
           .contact-form input,
@@ -24,7 +24,6 @@ const ContactForm = () => {
             border: 0;
             border-bottom: 2px solid #fff;
             height: 2rem;
-            font-family: vazir;
             width: 100%;
             line-height: 2rem;
             background-color: transparent;

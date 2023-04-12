@@ -1,28 +1,28 @@
 import React from 'react';
 import Link from 'next/link';
 import Socials from './Socials';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faSmile} from '@fortawesome/free-regular-svg-icons';
 
 const HomeRight = () => {
   return (
     <div className="home-right">
-      <p className="hello text-8 color-light-blue">سلام</p>
-      <h1 className="my-name text-12 font-weight-800 color-white">حسینم</h1>
+      <p className="hello text-8 color-light-blue">Hello! I am...</p>
+      <h1 className="my-name text-12 font-weight-800 color-white">Hossein</h1>
       <p className="about-me text-6 color-light-blue">
-        من توسعه دهنده وب هستم و کارم یکی از قسمت‌های جذاب زندگیم محسوب می‌شه.
-        عاشق یادگیری چیزای جدید تو حوزه کاری و تخصصی خودم هستم. اگه سوالی داری
-        میتونی برام{' '}
+        My passion is to create interfaces, experiences & applications for
+        businesses across the world and beyond. Got a question? Drop me a
         <Link legacyBehavior href="/">
-          <a className="message-link color-black">پیام</a>
-        </Link>{' '}
-        بفرستی!
+          <a className="message-link color-white pl-2">Message!</a>
+        </Link>
+        <FontAwesomeIcon className="pl-2" size="1x" icon={faSmile} />
       </p>
       <Socials />
       <style scoped jsx>
         {`
           .home-right {
-            flex: 0 0 370px;
+            flex: 1 2;
             display: flex;
-            margin-right: 5%;
             flex-direction: column;
             padding: 0 5%;
           }

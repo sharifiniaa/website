@@ -11,7 +11,7 @@ const Menu = ({open, setOpen}) => {
               className="menu__menu-item menu-item-link"
               onClick={() => setOpen(!open)}
             >
-              خانه
+              Home
             </a>
           </Link>
         </li>
@@ -21,7 +21,7 @@ const Menu = ({open, setOpen}) => {
               onClick={() => setOpen(!open)}
               className="menu__menu-item menu-item-link"
             >
-              بلاگ
+              Blog
             </a>
           </Link>
         </li>
@@ -31,7 +31,7 @@ const Menu = ({open, setOpen}) => {
               onClick={() => setOpen(!open)}
               className="menu__menu-item menu-item-link"
             >
-              درباره من
+              About Me
             </a>
           </Link>
         </li>
@@ -41,7 +41,7 @@ const Menu = ({open, setOpen}) => {
               onClick={() => setOpen(!open)}
               className="menu__menu-item menu-item-link"
             >
-              نمونه کار
+              Portfolio
             </a>
           </Link>
         </li>
@@ -51,7 +51,7 @@ const Menu = ({open, setOpen}) => {
               onClick={() => setOpen(!open)}
               className="menu__menu-item menu-item-link"
             >
-              قابلیت ها
+              Tech Stach
             </a>
           </Link>
         </li>
@@ -61,7 +61,7 @@ const Menu = ({open, setOpen}) => {
               onClick={() => setOpen(!open)}
               className="menu__menu-item menu-item-link"
             >
-              تماس
+              Contact
             </a>
           </Link>
         </li>
@@ -71,7 +71,7 @@ const Menu = ({open, setOpen}) => {
               onClick={() => setOpen(!open)}
               className="menu__menu-item menu-item-link"
             >
-              سوالات متداول
+              FAQs
             </a>
           </Link>
         </li>

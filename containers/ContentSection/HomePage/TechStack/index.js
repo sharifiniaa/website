@@ -10,16 +10,17 @@ const index = () => {
     <div id="tech-stack" className="tech-stack bg-color-black pt-5">
       <div className="tech-stack-wrapper px-5">
         <div className="tech-stack-content ">
-          <h2 className="tech-stack-content-title pt-4 pb-3 text-10">
-            تخصص ها
+          <h2 className="tech-stack-content-title pt-4 font-weight-700 pb-3 text-10">
+            Tech Stack
           </h2>
           <p className="tech-stack-content-text text-7 m-0 color-light-blue">
-            بخشی از تخصص های من که در فعالیت روزانه و همچنین پروژ‌ه ها استفاده
-            میکنم <FontAwesomeIcon icon={faRocket} />
+            Here is my favourite Tech Stack, languages and frameworks that I use
+            every day in most of my projects.
+            <FontAwesomeIcon className="pl-2" icon={faRocket} />
           </p>
-          <div className="tech-stack-content-skills  row">
+          <div className="d-flex flex-wrap">
             {skills.map((item, i) => (
-              <div key={i} className="skill-item col-12 col-md-6">
+              <div key={i} className="skill-item w-100 d-flex">
                 <TechItem item={item} />
               </div>
             ))}
@@ -28,11 +29,11 @@ const index = () => {
       </div>
       <style scoped jsx>
         {`
-          .skill-item {
-            margin-right: -100px;
-          }
           .tech-stack {
             position: relative;
+          }
+          .skill-item {
+            flex: 50%;
           }
           .tech-stack .tech-stack-wrapper .tech-stack-content {
             max-width: 1300px;
