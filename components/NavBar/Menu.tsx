@@ -37,7 +37,7 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
           </Link>
         </li>
         <li className="menu__menu-item">
-          <Link legacyBehavior href="/index">
+          <Link legacyBehavior href="/portfolio">
             <a
               onClick={() => setOpen(!open)}
               className="menu__menu-item menu-item-link"

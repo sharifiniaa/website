@@ -21,24 +21,24 @@ export const about = {
 
 export const resume = [
   {
-    date: 1396,
-    time_ago: '1396-1397',
-    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in',
+    date: 2017,
+    time_ago: '2017-2018',
+    text: 'I started my career path as a FrontEnd developer by joining Farabi Accelerator on Balona startup. That business was about advertisement. I Developed a vanilla JavaScript library for user interaction detection and ad display. I also developed the Dashboard with React.js and redux with two types of users and with different rules and permissions.',
   },
   {
-    date: 1397,
-    time_ago: '1397-1398',
-    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in',
+    date: 2018,
+    time_ago: '2018-2020',
+    text: 'I joined the LiaTeam company, The business of LiaTeam was about E-commerce, so I developed the E-commerce website with Javascript and React.js and a dashboard with Typescript and React with extensive graphical statistics with Google charts for visualizing the orders and delivery.',
   },
   {
-    date: 1398,
-    time_ago: '1398-1399',
-    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in',
+    date: 2020,
+    time_ago: '2020-2021',
+    text: "I started to work in a new business field by joining a RealPars company based in the Netherlands with many users. The business was a marketplace and learning online platform for PLC programming. I worked on existing websites with the Shopify platform and Liquid language, developed a document website with Next.js for product information and manuals, and created a dashboard for visualizing the company's data.",
   },
   {
-    date: 1399,
-    time_ago: '1399',
-    text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in',
+    date: 2021,
+    time_ago: '2021-Present',
+    text: "I started my new journey by joining Tehran Internet (*780#), the first company in fintech transactions with more than 2 million daily transactions. There are two businesses in 780. The core is fintech, and the second and newest is tourism, like booking.com. So I started to develop both of them  PWA for fintech and a tourism website and the company's main website with Typescript and React and  Nextj.js",
   },
 ];
 
