@@ -32,16 +32,17 @@ const TimelineItem: FC<Props> = ({data}) => {
           .timeline-item {
             position: relative;
             list-style: none;
-            transition: 250ms;
+            transition: ease-in-out 300ms;
           }
-          .timeline-item:hover.item-circle {
-            background-color: red;
+          .timeline-item:hover p {
+            transition: ease 0.3ms;
+            color: white;
           }
-          .timeline-item:hover.item-circle:after {
+          .timeline-item:hover .item-circle:after {
             opacity: 1;
           }
-          .timeline-item:hover.item-circle.timeline-date {
-            transform: translateX(10px);
+          .timeline-item:hover .timeline-date {
+            transform: translateX(-10px);
           }
           .timeline-item:before {
             content: '';
