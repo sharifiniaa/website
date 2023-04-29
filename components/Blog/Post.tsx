@@ -1,7 +1,7 @@
 const Post = ({data}) => {
   return (
     <div className="post">
-      <h1 className="page-title">بلاگ</h1>
+      <h1 className="page-title">{data.title}</h1>
       <div className="article">
         <div className="article-image">
           <img alt="" src="https://picsum.photos/600/500" />

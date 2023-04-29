@@ -14,7 +14,7 @@ const ContactForm = () => {
         <input name="subject" type="text" placeholder="Subject" />
       </div>
       <div className="py-3 mt-2 mb-0 text-5">
-        <textarea rows="6" name="message" placeholder="Message" />
+        <textarea rows={6} name="message" placeholder="Message" />
       </div>
       <ButtonOutline square className="d-block" title="SEND" />
       <style scoped jsx>
