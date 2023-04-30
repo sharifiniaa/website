@@ -9,7 +9,7 @@ const BlogPost = () => {
   return (
     <div className="blog-post">
       {blog
-        .filter(e => e.id === postId)
+        .filter(e => e.id === +postId!)
         .map(e => (
           <Post data={e} key={e.id} />
         ))}
