@@ -3,6 +3,7 @@ body {
   direction: ltr;
   background-color: #051923;
   color: #bfd1df;
+  scroll-behavior: smooth;
 }
 a:focus {
   outline: none;

@@ -12,10 +12,10 @@ const HomeRight = () => {
       <p className="about-me text-6 color-light-blue">
         My passion is to create interfaces, experiences & applications for
         businesses across the world and beyond. Got a question? Drop me a
-        <Link legacyBehavior href="/">
+        <Link legacyBehavior href="/#contact">
           <a className="message-link color-white pl-2">Message!</a>
         </Link>
-        <FontAwesomeIcon className="pl-2" size="1x" icon={faSmile} />
+        {/*<FontAwesomeIcon className="pl-2"  icon={faSmile} />*/}
       </p>
       <Socials />
       <style scoped jsx>
