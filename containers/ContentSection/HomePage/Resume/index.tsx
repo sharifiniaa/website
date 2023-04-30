@@ -4,7 +4,7 @@ import Timeline from '../../../../components/TimeLine';
 const Resume = () => {
   return (
     <div id="resume" className="resume pt-4 bg-color-black">
-      <div className="resume__wrapper px-5">
+      <div className="resume__wrapper px-sm-5 px-3">
         <div className="resume-content">
           <h2 className="resume-content__title font-weight-700 text-10 mb-5 pt-5 color-blue">
             Resume

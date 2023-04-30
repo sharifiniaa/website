@@ -26,6 +26,11 @@ const Introduce = () => {
               height: 140vh;
             }
           }
+           @media (max-width: 359.98px){
+               .home-section{
+                  height: 100vh;
+               }
+           }
         `}
       </style>
     </div>

@@ -7,7 +7,7 @@ import {faSmile} from '@fortawesome/free-regular-svg-icons';
 const HomeRight = () => {
   return (
     <div className="home-right">
-      <p className="hello text-8 color-light-blue">Hello! I am...</p>
+      <p className="text-8 color-light-blue">Hello! I am...</p>
       <h1 className="my-name text-12 font-weight-800 color-white">Hossein</h1>
       <p className="about-me text-6 color-light-blue">
         My passion is to create interfaces, experiences & applications for
@@ -44,9 +44,12 @@ const HomeRight = () => {
               flex: 0 0 100%;
             }
           }
-          @media (max-width: 359.98px) and(max-height:480px) {
+          @media (max-width: 359.98px){
             .home-right {
               padding-top: 100px;
+            }
+            .my-name{
+              font-size: 4rem;
             }
           }
         `}
