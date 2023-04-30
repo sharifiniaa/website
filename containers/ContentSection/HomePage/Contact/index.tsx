@@ -9,7 +9,7 @@ import ContactForm from '../../../../components/Contact/ContactForm';
 const Contact = () => {
   return (
     <div id="contact" className="contact pt-4 .bg-color-black">
-      <div className="contact__wrapper p-5">
+      <div className="contact__wrapper p-sm-5 p-3">
         <div className="contact-content">
           <h2 className="contact-content__title font-weight-700 text-9 mb-3 pt-3 color-blue">
             Get in touch
