@@ -1,13 +1,13 @@
+
 const Avatar = () => {
   return (
     <div className="avatar">
-      <img alt="image" />
       <style scoped jsx>
         {`
           .avatar {
             position: fixed;
             top: 7rem;
-            left: 1rem;
+            right: 1rem;
             background-image: url('/me.png');
             background-size: 100%;
             width: 120px;
