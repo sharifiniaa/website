@@ -45,43 +45,43 @@ export const resume = [
 export const skills = [
   {
     name: 'Javascritp',
-    image: 'javascript.png',
+    image: '/javascript.png',
   },
   {
     name: 'Typescript',
-    image: 'typescript.png',
+    image: '/typescript.png',
   },
   {
     name: 'ReactJS',
-    image: 'react.png',
+    image: '/react.png',
   },
   {
     name: 'NextJS',
-    image: 'nextjs.png',
+    image: '/nextjs.png',
   },
   {
     name: 'NodeJS',
-    image: 'nodejs.png',
+    image: '/nodejs.png',
   },
   {
     name: 'NestJS',
-    image: 'nestjs.png',
+    image: '/nestjs.png',
   },
   {
     name: 'Docker',
-    image: 'docker.png',
+    image: '/docker.png',
   },
   {
     name: 'CSS3 + HTML5',
-    image: 'html-css.png',
+    image: '/html-css.png',
   },
   {
     name: 'VueJS',
-    image: 'vuejs.png',
+    image: '/vuejs.png',
   },
   {
     name: 'GraphQL',
-    image: 'graphql.png',
+    image: '/graphql.png',
   },
 ];
 

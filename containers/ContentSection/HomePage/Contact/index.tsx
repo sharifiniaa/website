@@ -19,11 +19,12 @@ const Contact = () => {
             <div className="contact-content__holder--info  mb-5 col-5">
               <p className="contact-content__holder--info__text color-light-blue text-6 m-0 pb-3">
                 {contactData.section_info}
+                <FontAwesomeIcon
+                  className="contact-content__holder--info__text--icon text-10 d-inline m-0 mr-2"
+                  icon={faSmile}
+                />
               </p>
-              <FontAwesomeIcon
-                className="contact-content__holder--info__text--icon text-10 d-inline m-0 mr-2"
-                icon={faSmile}
-              />
+
               <div className="contact-content__holder--info__personal mt-4">
                 {contactData.personal_info.map((item, i) => (
                   <InfoText key={i} title={item.title} text={item.text} />
