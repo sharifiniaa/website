@@ -18,7 +18,7 @@ const TechStack = () => {
             every day in most of my projects.
             <FontAwesomeIcon className="pl-2" icon={faRocket} />
           </p>
-          <div className="d-flex flex-wrap">
+          <div className="d-flex flex-column flex-sm-row flex-sm-wrap">
             {skills.map((item, i) => (
               <div key={i} className="skill-item w-100 d-flex">
                 <TechItem item={item} />
