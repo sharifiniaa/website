@@ -1,8 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Socials from './Socials';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faSmile} from '@fortawesome/free-regular-svg-icons';
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faSmile} from '@fortawesome/free-regular-svg-icons';
 
 const HomeRight = () => {
   return (
