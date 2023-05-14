@@ -1,5 +1,4 @@
 import React, {FC} from 'react';
-import Link from 'next/link';
 
 export interface IButtonOutline {
   link?: string;
@@ -14,11 +13,12 @@ const ButtonOutline: FC<IButtonOutline> = ({
   square = false,
   className,
 }) => {
+    const onClickHandler = () => {
+        window.location.href = window.location.origin + link
+    }
   return (
-    <div className={`button-outline ${className} ${square ? 'square' : ''}`}>
-      <Link legacyBehavior href={link ? link : '/'}>
-        <a className="button-outline__tag ">{title}</a>
-      </Link>
+    <div onClick={link ? onClickHandler : undefined} className={`button-outline ${className} ${square ? 'square' : ''}`}>
+        <span className="button-outline__tag">{title}</span>
       <style scoped jsx>
         {`
           .button-outline {
