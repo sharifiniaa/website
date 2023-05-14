@@ -1,4 +1,5 @@
 import {FC} from 'react';
+import Image from 'next/image';
 
 export interface ITechItem {
   name: string;
@@ -13,10 +14,12 @@ const TechItem: FC<Props> = ({item}) => {
   return (
     <div className="skills">
       <div className="skills skills-image-holder">
-        <img
+        <Image
           className="skills skills-image-holder skills-image-holder-image"
           src={item.image}
           alt={item.name}
+          width={60}
+          height={60}
         />
       </div>
       <div className="skills skills-text-holder">

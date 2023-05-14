@@ -16,16 +16,16 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
             </a>
           </Link>
         </li>
-        <li className="menu__menu-item">
-          <Link legacyBehavior href="/index">
-            <a
-              onClick={() => setOpen(!open)}
-              className="menu__menu-item menu-item-link"
-            >
-              Blog
-            </a>
-          </Link>
-        </li>
+        {/*<li className="menu__menu-item">*/}
+        {/*  <Link legacyBehavior href="/index">*/}
+        {/*    <a*/}
+        {/*      onClick={() => setOpen(!open)}*/}
+        {/*      className="menu__menu-item menu-item-link"*/}
+        {/*    >*/}
+        {/*      Blog*/}
+        {/*    </a>*/}
+        {/*  </Link>*/}
+        {/*</li>*/}
         <li className="menu__menu-item">
           <Link legacyBehavior href="/#about-me">
             <a
@@ -36,23 +36,23 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
             </a>
           </Link>
         </li>
-        <li className="menu__menu-item">
-          <Link legacyBehavior href="/portfolio">
-            <a
-              onClick={() => setOpen(!open)}
-              className="menu__menu-item menu-item-link"
-            >
-              Portfolio
-            </a>
-          </Link>
-        </li>
+        {/*<li className="menu__menu-item">*/}
+        {/*  <Link legacyBehavior href="/portfolio">*/}
+        {/*    <a*/}
+        {/*      onClick={() => setOpen(!open)}*/}
+        {/*      className="menu__menu-item menu-item-link"*/}
+        {/*    >*/}
+        {/*      Portfolio*/}
+        {/*    </a>*/}
+        {/*  </Link>*/}
+        {/*</li>*/}
         <li className="menu__menu-item">
           <Link legacyBehavior href="/#tech-stack">
             <a
               onClick={() => setOpen(!open)}
               className="menu__menu-item menu-item-link"
             >
-              Tech Stach
+              Tech Stack
             </a>
           </Link>
         </li>
@@ -66,16 +66,16 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
             </a>
           </Link>
         </li>
-        <li className="menu__menu-item">
-          <Link legacyBehavior href="/#faq">
-            <a
-              onClick={() => setOpen(!open)}
-              className="menu__menu-item menu-item-link"
-            >
-              FAQs
-            </a>
-          </Link>
-        </li>
+        {/*<li className="menu__menu-item">*/}
+        {/*  <Link legacyBehavior href="/#faq">*/}
+        {/*    <a*/}
+        {/*      onClick={() => setOpen(!open)}*/}
+        {/*      className="menu__menu-item menu-item-link"*/}
+        {/*    >*/}
+        {/*      Resume*/}
+        {/*    </a>*/}
+        {/*  </Link>*/}
+        {/*</li>*/}
       </ul>
       <style scoped jsx>
         {`

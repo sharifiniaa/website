@@ -12,42 +12,42 @@ const Socials = () => {
   return (
     <div className="socials">
       <a
-        className="socials__link  text-11 color-light-blue link-icon"
+        className="text-11 color-light-blue link-icon"
         href="mailto:hosein.sharifinia@gmail.com"
       >
-        <FontAwesomeIcon className="socials__link--icon" icon={faEnvelope} />
+        <FontAwesomeIcon className="--icon" icon={faEnvelope} />
       </a>
       <a
         href="https://www.instagram.com/hossein.sharifinia"
-        className="socials__link  text-11 color-light-blue link-icon"
+        className="text-11 color-light-blue link-icon"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon className="socials__link--icon" icon={faInstagram} />
+        <FontAwesomeIcon className="--icon" icon={faInstagram} />
       </a>
       <a
         href="https://www.linkedin.com/in/hossein-sharifinia"
-        className="socials__link  text-11 color-light-blue link-icon"
+        className="  text-11 color-light-blue link-icon"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon className="socials__link--icon" icon={faLinkedin} />
+        <FontAwesomeIcon className="--icon" icon={faLinkedin} />
       </a>
       <a
         href="https://t.me/sharifiniahosein"
-        className="socials__link  text-11 color-light-blue link-icon"
+        className="  text-11 color-light-blue link-icon"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon className="socials__link--icon" icon={faTelegram} />
+        <FontAwesomeIcon className="--icon" icon={faTelegram} />
       </a>
       <a
         href="https://web.whatsapp.com/send?phone=989115538225"
-        className="socials__link  text-11 color-light-blue link-icon"
+        className="  text-11 color-light-blue link-icon"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FontAwesomeIcon className="socials__link--icon" icon={faWhatsapp} />
+        <FontAwesomeIcon className="--icon" icon={faWhatsapp} />
       </a>
       <style scoped jsx>
         {`
@@ -68,6 +68,19 @@ const Socials = () => {
               flex-wrap: wrap;
             }
           }
+           @media (max-width: 359.98px) {
+           .socials{
+           display: flex;
+           justify-content: space-between;
+           }
+               .link-icon {
+               margin-left: 10px;
+               transform: scale(0.8);
+               }
+               .link-icon:first-child{
+               margin-left: 0;
+               }
+           }
         `}
       </style>
     </div>

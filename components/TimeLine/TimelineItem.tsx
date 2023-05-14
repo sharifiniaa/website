@@ -13,9 +13,9 @@ type Props = {
 const TimelineItem: FC<Props> = ({data}) => {
   return (
     <div>
-      <li className="timeline-item m-0 mr-5 mb-4 pt-1">
+      <li className="timeline-item m-0 mr-0 mr-sm-5 mb-4 pt-1">
         <span className="item-circle " />
-        <div className="item-content mr-5 ">
+        <div className="item-content mr-0 mr-sm-5 ">
           <p className="content-text color-light-blue text-5 font-weight-400 ">
             <b className="text-time pr-2 color-pink font-weight-bold">
               {data.time_ago}
@@ -96,6 +96,12 @@ const TimelineItem: FC<Props> = ({data}) => {
             top: 10px;
             transition: 300ms;
           }
+          @media (max-width: 359.98px){
+              .content-text{
+                font-size: 14px
+              }
+          }
+          
         `}
       </style>
     </div>

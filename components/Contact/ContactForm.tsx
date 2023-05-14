@@ -3,7 +3,7 @@ import ButtonOutline from '../Buttons/ButtounOutline';
 
 const ContactForm = () => {
   return (
-    <form className="contact-form bg-color-dark-blue p-5">
+    <form className="contact-form bg-color-dark-blue p-3 p-sm-5">
       <div className="py-3 mt-2 mb-0 text-5">
         <input name="name" type="text" placeholder="Name" />
       </div>

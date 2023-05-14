@@ -6,7 +6,7 @@ import ButtonOutline from 'components/Buttons/ButtounOutline';
 const index = () => {
   return (
     <div id="about-me" className="about pt-4 color-black">
-      <div className="about__wrapper px-5">
+      <div className="about__wrapper px-3 px-sm-5">
         <div className="about-content">
           <h2 className="about-content__title text-9 color-blue font-weight-700 pt-5 pb-0 m-0 mb-5">
             About Me
@@ -22,7 +22,7 @@ const index = () => {
             />
           </p>*/}
           <div className="about-content__cta-holder mt-4 mb-0">
-            <ButtonOutline title="Check out my portfolio" link="/portfolio" />
+            <ButtonOutline title="Download Resume" link="/resume.pdf" />
           </div>
         </div>
       </div>
