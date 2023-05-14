@@ -22,7 +22,7 @@ const index = () => {
             />
           </p>*/}
           <div className="about-content__cta-holder mt-4 mb-0">
-            <ButtonOutline title="Check out my portfolio" link="/portfolio" />
+            <ButtonOutline title="Download Resume" link="/resume.pdf" />
           </div>
         </div>
       </div>
