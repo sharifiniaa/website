@@ -1,81 +1,48 @@
 import {FC} from 'react';
 import Link from 'next/link';
 import {IBurger} from './Burger';
+import {smoothScroll} from 'utils/helper/smoothScroll';
 
 const Menu: FC<IBurger> = ({open, setOpen}) => {
+  const onClickHandler = (target: string) => {
+    smoothScroll(target);
+    setOpen(!open);
+  };
   return (
     <div>
       <ul className="menu d-inline-block">
         <li className="menu__menu-item">
-          <Link legacyBehavior href="/">
-            <a
-              className="menu__menu-item menu-item-link"
-              onClick={() => setOpen(!open)}
-            >
-              Home
-            </a>
-          </Link>
-        </li>
-        {/*<li className="menu__menu-item">*/}
-        {/*  <Link legacyBehavior href="/index">*/}
-        {/*    <a*/}
-        {/*      onClick={() => setOpen(!open)}*/}
-        {/*      className="menu__menu-item menu-item-link"*/}
-        {/*    >*/}
-        {/*      Blog*/}
-        {/*    </a>*/}
-        {/*  </Link>*/}
-        {/*</li>*/}
-        <li className="menu__menu-item">
-          <Link legacyBehavior href="/#about-me">
-            <a
-              onClick={() => setOpen(!open)}
-              className="menu__menu-item menu-item-link"
-            >
-              About Me
-            </a>
-          </Link>
-        </li>
-        {/*<li className="menu__menu-item">*/}
-        {/*  <Link legacyBehavior href="/portfolio">*/}
-        {/*    <a*/}
-        {/*      onClick={() => setOpen(!open)}*/}
-        {/*      className="menu__menu-item menu-item-link"*/}
-        {/*    >*/}
-        {/*      Portfolio*/}
-        {/*    </a>*/}
-        {/*  </Link>*/}
-        {/*</li>*/}
-        <li className="menu__menu-item">
-          <Link legacyBehavior href="/#tech-stack">
-            <a
-              onClick={() => setOpen(!open)}
-              className="menu__menu-item menu-item-link"
-            >
-              Tech Stack
-            </a>
-          </Link>
+          <a
+            className="menu__menu-item menu-item-link"
+            onClick={onClickHandler.bind(this, 'home')}
+          >
+            Home
+          </a>
         </li>
         <li className="menu__menu-item">
-          <Link legacyBehavior href="/#contact">
-            <a
-              onClick={() => setOpen(!open)}
-              className="menu__menu-item menu-item-link"
-            >
-              Contact
-            </a>
-          </Link>
+          <a
+            onClick={onClickHandler.bind(this, 'about-me')}
+            className="menu__menu-item menu-item-link"
+          >
+            About Me
+          </a>
         </li>
-        {/*<li className="menu__menu-item">*/}
-        {/*  <Link legacyBehavior href="/#faq">*/}
-        {/*    <a*/}
-        {/*      onClick={() => setOpen(!open)}*/}
-        {/*      className="menu__menu-item menu-item-link"*/}
-        {/*    >*/}
-        {/*      Resume*/}
-        {/*    </a>*/}
-        {/*  </Link>*/}
-        {/*</li>*/}
+        <li className="menu__menu-item">
+          <a
+            onClick={onClickHandler.bind(this, 'tech-stack')}
+            className="menu__menu-item menu-item-link"
+          >
+            Tech Stack
+          </a>
+        </li>
+        <li className="menu__menu-item">
+          <a
+            onClick={onClickHandler.bind(this, 'contact')}
+            className="menu__menu-item menu-item-link"
+          >
+            Contact
+          </a>
+        </li>
       </ul>
       <style scoped jsx>
         {`
@@ -89,6 +56,7 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
           }
 
           .menu-item-link {
+            cursor: pointer;
             color: #fff;
             padding: 5px 0;
             position: relative;
@@ -97,6 +65,7 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
             font-weight: 700;
             text-decoration: none;
           }
+
           .menu-item-link:after {
             content: '';
             display: block;
