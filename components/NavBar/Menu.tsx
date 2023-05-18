@@ -14,14 +14,14 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
         <li className="menu__menu-item">
           <a
             className="menu__menu-item menu-item-link"
-            onClick={() => onClickHandler('home')}
+            onClick={onClickHandler.bind(this, 'home')}
           >
             Home
           </a>
         </li>
         <li className="menu__menu-item">
           <a
-            onClick={() => onClickHandler('about-me')}
+            onClick={onClickHandler.bind(this, 'about-me')}
             className="menu__menu-item menu-item-link"
           >
             About Me
@@ -29,7 +29,7 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
         </li>
         <li className="menu__menu-item">
           <a
-            onClick={() => onClickHandler('tech-stack')}
+            onClick={onClickHandler.bind(this, 'tech-stack')}
             className="menu__menu-item menu-item-link"
           >
             Tech Stack
@@ -37,7 +37,7 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
         </li>
         <li className="menu__menu-item">
           <a
-            onClick={() => onClickHandler('contact')}
+            onClick={onClickHandler.bind(this, 'contact')}
             className="menu__menu-item menu-item-link"
           >
             Contact
