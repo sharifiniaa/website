@@ -1,4 +1,5 @@
 import {FC} from 'react';
+import Link from 'next/link';
 import {IBurger} from './Burger';
 import {smoothScroll} from 'utils/helper/smoothScroll';
 
@@ -13,14 +14,14 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
         <li className="menu__menu-item">
           <a
             className="menu__menu-item menu-item-link"
-            onClick={onClickHandler.bind(this, 'home')}
+            onClick={() => onClickHandler('home')}
           >
             Home
           </a>
         </li>
         <li className="menu__menu-item">
           <a
-            onClick={onClickHandler.bind(this, 'about-me')}
+            onClick={() => onClickHandler('about-me')}
             className="menu__menu-item menu-item-link"
           >
             About Me
@@ -28,7 +29,7 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
         </li>
         <li className="menu__menu-item">
           <a
-            onClick={onClickHandler.bind(this, 'tech-stack')}
+            onClick={() => onClickHandler('tech-stack')}
             className="menu__menu-item menu-item-link"
           >
             Tech Stack
@@ -36,7 +37,7 @@ const Menu: FC<IBurger> = ({open, setOpen}) => {
         </li>
         <li className="menu__menu-item">
           <a
-            onClick={onClickHandler.bind(this, 'contact')}
+            onClick={() => onClickHandler('contact')}
             className="menu__menu-item menu-item-link"
           >
             Contact
