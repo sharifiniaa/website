@@ -28,7 +28,7 @@ const Introduce = () => {
           }
            @media (max-width: 359.98px){
                .home-section{
-                  height: 100vh;
+                  height: 90vh;
                }
            }
         `}

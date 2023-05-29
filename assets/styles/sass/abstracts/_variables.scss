@@ -8,6 +8,7 @@ $colors: (
   'light-blue': #bfd1df,
   'pink': #faefff,
   'white': #fff,
+  'danger': #dc3545
 );
 
 @each $colorPrefix, $color in $colors {
